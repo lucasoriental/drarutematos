@@ -99,7 +99,7 @@ export default function ExperienciaProfissional() {
       <div id="container-conteudo-experiencias-profissionais-light">
         <p className="container-titulo-da-seccao">Experiências Profissionais</p>
         <p className="container-sub-titulo-da-seccao">
-          Aqui estão as minhas experiências Profissionais
+        Conheça o meu percurso profissional e as experiências que fundamentam o meu trabalho na área da psicologia.
         </p>
         <div
           className="container-todas-as-experiencias-profissionais"
