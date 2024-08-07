@@ -18,14 +18,16 @@ export default function MinhasCompetencias() {
       const width = window.innerWidth;
       if (width < 400) {
         setItemsPerPage(1);
-      } else if (width < 610) {
+      } else if (width < 667) {
         setItemsPerPage(2);
-      } else if (width < 761) {
+      } else if (width < 878) {
         setItemsPerPage(3);
-      } else if (width < 962) {
+      } else if (width < 970) {
         setItemsPerPage(4);
-      } else {
+      } else if (width < 1300) {
         setItemsPerPage(5);
+      } else {
+        setItemsPerPage(6);
       }
     };
 
@@ -42,100 +44,101 @@ export default function MinhasCompetencias() {
     {
       id: 0,
       imagem: tempImg,
-      competencia: "Psicologia Clínica e da Saúde",
-      nivel: 9,
-      tipo: true,
+      competencia: "Criatividade",
+      nivel: 7,
+      tipo: false,
     },
     {
       id: 1,
       imagem: tempImg,
-      competencia: "Ética profissional",
-      nivel: 2,
-      tipo: true,
+      competencia: "Comunicação",
+      nivel: 8,
+      tipo: false,
     },
     {
       id: 2,
       imagem: tempImg,
-      competencia: "Investigação",
-      nivel: 2,
-      tipo: true,
+      competencia: "Colaboração",
+      nivel: 8,
+      tipo: false,
     },
     {
       id: 3,
       imagem: tempImg,
-      competencia: "Escuta ativa",
-      nivel: 2,
-      tipo: true,
+      competencia: "Flexibilidade e Adaptabilidade",
+      nivel: 9,
+      tipo: false,
     },
     {
       id: 4,
       imagem: tempImg,
       competencia: "Empatia",
-      nivel: 2,
-      tipo: true,
+      nivel: 8,
+      tipo: false,
     },
     {
       id: 5,
       imagem: tempImg,
-      competencia: "Avaliação individual",
-      nivel: 2,
-      tipo: true,
+      competencia: "Organização",
+      nivel: 8,
+      tipo: false,
     },
     {
       id: 6,
       imagem: tempImg,
-      competencia: "TCC (Terapia cognitivo-comportamental)",
-      nivel: 2,
-      tipo: true,
+      competencia: "Pensamento Crítico",
+      nivel: 8,
+      tipo: false,
     },
     {
       id: 7,
       imagem: tempImg,
-      competencia: "Intervenções psicológicas",
-      nivel: 2,
-      tipo: true,
+      competencia: "Resolução de Problemas",
+      nivel: 8,
+      tipo: false,
     },
+
     {
       id: 8,
       imagem: tempImg,
-      competencia: "Avaliação psicológica",
-      nivel: 2,
+      competencia: "Avaliação Psicológica",
+      nivel: 9,
       tipo: true,
     },
     {
       id: 9,
       imagem: tempImg,
-      competencia: "Psicologia",
-      nivel: 2,
-      tipo: false,
+      competencia: "Téc. de Interv. Cogn.-Comport.",
+      nivel: 9,
+      tipo: true,
     },
     {
       id: 10,
       imagem: tempImg,
-      competencia: "Comunicação",
-      nivel: 2,
-      tipo: false,
+      competencia: "Atualização de Conhecimento",
+      nivel: 8,
+      tipo: true,
     },
     {
       id: 11,
       imagem: tempImg,
-      competencia: "Capacidade de organização",
-      nivel: 2,
-      tipo: false,
+      competencia: "Documentação e Relatórios",
+      nivel: 8,
+      tipo: true,
     },
     {
       id: 12,
       imagem: tempImg,
-      competencia: "Saúde mental",
-      nivel: 2,
-      tipo: false,
+      competencia: "Ética e Confidencialidade",
+      nivel: 10,
+      tipo: true,
     },
     {
       id: 13,
       imagem: tempImg,
-      competencia: "Trabalho em equipe",
-      nivel: 2,
-      tipo: false,
+      competencia: "Terapias de 3ª geração",
+      nivel: 7,
+      tipo: true,
     },
   ];
 
@@ -144,7 +147,9 @@ export default function MinhasCompetencias() {
       <div id="container-conteudo-minhas-competencias-light">
         <p className="container-titulo-da-seccao">Minhas Competências</p>
         <p className="container-sub-titulo-da-seccao">
-          Cá estão reunidas as minhas Soft e Technical Skills!
+          Explore as minhas competências técnicas e transversais que sustentam a
+          minha prática profissional e garantem um atendimento eficaz e de
+          qualidade, adaptado às suas necessidades.
         </p>
         <div className="container-minhas-competencias-div">
           <div className="container-minhas-competencias-transversais">
@@ -154,7 +159,7 @@ export default function MinhasCompetencias() {
             <div className="container-minhas-competencias-tecnicas-transversais-grade">
               <Swiper
                 modules={[Virtual, Pagination, Navigation]}
-                spaceBetween={50}
+                spaceBetween={0}
                 slidesPerView={itemsPerPage}
                 navigation={true}
                 virtual
@@ -204,7 +209,7 @@ export default function MinhasCompetencias() {
             <div className="container-minhas-competencias-tecnicas-grade">
               <Swiper
                 modules={[Virtual, Pagination, Navigation]}
-                spaceBetween={50}
+                spaceBetween={0}
                 slidesPerView={itemsPerPage}
                 navigation={true}
                 virtual
