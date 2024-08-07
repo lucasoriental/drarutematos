@@ -13,13 +13,13 @@ export default function ContactosEMarcacoes() {
       id: 0,
       imagem: <i className="fa-solid fa-envelope"></i>,
       nomeRedeSocial: "ruteimatos@gmail.com",
-      link: "#",
+      link: "mailto:ruteimatos@gmail.com",
     },
     {
       id: 0,
       imagem: <i className="fa-solid fa-phone"></i>,
-      nomeRedeSocial: "999 999 999",
-      link: "#",
+      nomeRedeSocial: "928 166 888",
+      link: "https://web.whatsapp.com/send?phone=351928166888",
     },
     {
       id: 0,
@@ -31,12 +31,12 @@ export default function ContactosEMarcacoes() {
       id: 1,
       imagem: <i className="fa-brands fa-linkedin-in"></i>,
       nomeRedeSocial: "Rute Isabel Matos",
-      link: "#",
+      link: "https://www.linkedin.com/in/rutematos/",
     },
     {
       id: 2,
       imagem: <i className="fa-brands fa-facebook-f"></i>,
-      nomeRedeSocial: "Rute Isabel Psicóloga",
+      nomeRedeSocial: "Rute Isabel Matos",
       link: "#",
     },
   ];
