@@ -1,4 +1,4 @@
-export default function MenuHamburguer({width, height, strokeWidth, strokeColor}) {
+export default function MenuHamburguer({ width, height, strokeWidth, strokeColor }) {
   return (
     <svg
       width={width}

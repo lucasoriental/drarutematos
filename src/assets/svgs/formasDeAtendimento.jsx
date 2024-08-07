@@ -1,4 +1,4 @@
-export default function FormasDeAtendimentoSVG({color, size, strokeWidth}) {
+export default function FormasDeAtendimentoSVG({ color, size, strokeWidth }) {
   return (
     <svg
       width={size}

@@ -285,7 +285,7 @@ export default function FormacaoAcademia() {
       <div id="container-conteudo-formacao-academica-dark">
         <p className="container-titulo-da-seccao">Formação Académica</p>
         <p className="container-sub-titulo-da-seccao">
-        Explore a minha formação académica e veja como o conhecimento adquirido nas diversas etapas da minha educação contribui para a qualidade do meu trabalho.
+          Explore a minha formação académica e veja como o conhecimento adquirido nas diversas etapas da minha educação contribui para a qualidade do meu trabalho.
         </p>
 
         <div className="container-formacao-academica-div">

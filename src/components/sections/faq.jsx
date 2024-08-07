@@ -246,7 +246,7 @@ export default function FAQ() {
                   <div
                     className={
                       selecionado.secaoId === secao.id &&
-                      selecionado.perguntaId === perguntaIndex
+                        selecionado.perguntaId === perguntaIndex
                         ? "conteudo-mostrado"
                         : "conteudo"
                     }

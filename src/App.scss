@@ -61,7 +61,8 @@ header {
   opacity: 100%;
 }
 
-#header-desktop-title:hover, #header-mobile-title:hover{
+#header-desktop-title:hover,
+#header-mobile-title:hover {
   transition: 600ms;
   opacity: 70%;
 }
@@ -668,7 +669,6 @@ body.modal-open {
   height: 35px;
   object-fit: cover;
   margin-right: 20px;
-
 }
 
 .container-beneficios-item p {
@@ -1343,7 +1343,7 @@ body.cada-experiencia-profissional-card-item {
   text-align: center;
 }
 
-.item-minhas-competencias-nivel{
+.item-minhas-competencias-nivel {
   display: flex;
   align-items: center;
   margin-top: 10px;
@@ -1356,8 +1356,6 @@ body.cada-experiencia-profissional-card-item {
   margin: 0 -0.4px;
   padding: 0;
 }
-
-
 
 .item-minhas-competencias-nivel-barra-Off {
   width: 13px;
@@ -1661,7 +1659,7 @@ body.cada-experiencia-profissional-card-item {
 
 .onde-estou-ultimo-card {
   height: 50px;
-  background-color: #FFF;
+  background-color: #fff;
   margin: 20px auto 0px;
   width: 80vw;
   max-width: 435px;
@@ -1798,7 +1796,7 @@ body.cada-experiencia-profissional-card-item {
   margin: 0 auto;
 }
 
-.item-FAQ-seccao-p{
+.item-FAQ-seccao-p {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -1911,13 +1909,13 @@ body.cada-experiencia-profissional-card-item {
   transition: 600ms;
 }
 
-.container-FAQ-mais-perguntas-pergunta{
+.container-FAQ-mais-perguntas-pergunta {
   text-align: justify;
   font-size: 20px;
   width: 90%;
 }
 
-.container-FAQ-mais-perguntas-pergunta a{
+.container-FAQ-mais-perguntas-pergunta a {
   color: blue;
   font-weight: bold;
 }

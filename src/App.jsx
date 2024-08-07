@@ -20,7 +20,7 @@ function App() {
       <MinhasCompetencias />
       <SobreMim />
       <ContactosEMarcacoes />
-      <FAQ/>
+      <FAQ />
     </>
   );
 }

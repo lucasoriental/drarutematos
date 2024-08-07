@@ -1,4 +1,4 @@
-export default function CertificateSVG({size, color}) {
+export default function CertificateSVG({ size, color }) {
   return (
     <svg
       fill={color}

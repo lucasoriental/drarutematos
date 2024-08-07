@@ -24,7 +24,7 @@ export default function mainPage() {
             <span>Cognitivo-Comportamental (TCC).</span>
           </p>
           <p>
-          Aqui, apresento os <span>serviços</span> que disponibilizo na área da psicologia, bem como o meu <span>percurso académico</span> e <span>profissional</span>.
+            Aqui, apresento os <span>serviços</span> que disponibilizo na área da psicologia, bem como o meu <span>percurso académico</span> e <span>profissional</span>.
           </p>
         </div>
         <Link
