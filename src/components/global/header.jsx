@@ -30,7 +30,16 @@ export default function Header() {
   return (
     <header>
       <div id="header-desktop">
-        <p id="header-desktop-title">Dra. Rute Isabel Matos</p>
+        <Link
+          activeClass="active"
+          to="container-main"
+          spy={true}
+          smooth={true}
+          offset={-headerHeight}
+          duration={1000}
+        >
+          <p id="header-desktop-title">Dra. Rute Isabel Matos</p>
+        </Link>
         <canvas id="header-desktop-DivisionBar" />
         <nav>
           <Link
@@ -116,7 +125,16 @@ export default function Header() {
               strokeColor="#292929"
             />
           </button>
+          <Link
+            activeClass="active"
+            to="container-main"
+            spy={true}
+            smooth={true}
+            offset={-headerHeight}
+            duration={1000}
+          >
           <p id="header-mobile-title">Dra. Rute Isabel Matos</p>
+          </Link>
         </div>
         <div
           className={`header-mobile-side-bar ${isActive ? "is-active" : ""}`}
