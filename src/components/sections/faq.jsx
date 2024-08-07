@@ -229,16 +229,7 @@ export default function FAQ() {
         <div className="container-FAQ-grade">
           {arrFAQ.map((secao) => (
             <div key={secao.id} className="item-FAQ-seccao-div">
-              <p
-                className="item-FAQ-seccao-p"
-                style={{
-                  fontSize: "25px",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
-                }}
-              >
-                {secao.nome}
-              </p>
+              <p className="item-FAQ-seccao-p">{secao.nome}</p>
               {secao.questoes.map((questao, perguntaIndex) => (
                 <div key={perguntaIndex} className="item-FAQ-div">
                   <button
@@ -269,10 +260,7 @@ export default function FAQ() {
         <div className="container-FAQ-mais-perguntas-div">
           <p className="container-FAQ-mais-perguntas-pergunta">
             Sua dúvida não está entre as mais perguntadas? Envia-me a tua dúvida
-            para que possa te ajudar clicando{" "}
-            <a href="#" style={{ textDecoration: "none" }}>
-              aqui
-            </a>
+            para que possa te ajudar clicando <a href="#">aqui</a>
           </p>
         </div>
       </div>
