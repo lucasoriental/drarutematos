@@ -285,9 +285,7 @@ export default function FormacaoAcademia() {
       <div id="container-conteudo-formacao-academica-dark">
         <p className="container-titulo-da-seccao">Formação Académica</p>
         <p className="container-sub-titulo-da-seccao">
-          Nesta secção você encontrará informações sobre toda a minha vida
-          académica! Isso inclui Ensino Superior, Cursos e Formações e Menções
-          Honrosas
+        Explore a minha formação académica e veja como o conhecimento adquirido nas diversas etapas da minha educação contribui para a qualidade do meu trabalho.
         </p>
 
         <div className="container-formacao-academica-div">
