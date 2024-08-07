@@ -1,5 +1,5 @@
 import { useState } from "react";
-import callToActionImg from "../../../assets/images/call-to-action-img.jpg";
+import callToActionImg from "../../../assets/images/callToActionwebp.webp";
 import MyServiceModal from "./myServiceModal";
 import { Link } from "react-scroll";
 import FormasDeAtendimentoSVG from "../../../assets/svgs/formasDeAtendimento";
@@ -238,8 +238,9 @@ export default function MyServices() {
         <div className="container-call-to-action-div">
           <div className="container-call-to-action-column-1">
             <p>
-              Pront@ para começar sua jornada de autoconhecimento e bem-estar?
-              Entre em contato e agende sua consulta agora mesmo!
+              Preparad@ para iniciar a sua caminhada em direção ao
+              autoconhecimento e bem-estar? Entre em contato e agende sua
+              consulta agora mesmo!
             </p>
             <a
               href="https://lucasoriental.com"
