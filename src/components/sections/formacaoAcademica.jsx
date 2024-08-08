@@ -35,19 +35,19 @@ export default function FormacaoAcademia() {
     {
       id: 0,
       imagem: tempImg,
-      curso: "Licenciatura em Psicologia",
+      curso:
+      "Mestrado em Intervenções Cognitivo-Comportamentais em Psicologia Clínica e da Saúde",
       instituicao:
-        "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
-      periodo: "2018 - 2021",
+      "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
+      periodo: "2021 - 2023",
     },
     {
       id: 1,
       imagem: tempImg,
-      curso:
-        "Mestrado em Intervenções Cognitivo-Comportamentais em Psicologia Clínica e da Saúde",
+      curso: "Licenciatura em Psicologia",
       instituicao:
         "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
-      periodo: "2021 - 2023",
+      periodo: "2018 - 2021",
     },
   ];
 
