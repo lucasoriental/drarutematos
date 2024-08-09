@@ -3,7 +3,7 @@ import InstagramSvg from "../../assets/svgs/InstagramSVG";
 import LinkedinSvg from "../../assets/svgs/LinkedinSVG";
 import { Link } from "react-scroll";
 
-import fotoDePerfil from "../../assets/images/profile-1.jpg";
+import fotoDePerfil from "../../assets/images/main_page_imagem.webp";
 
 export default function mainPage() {
   let headerHeight;

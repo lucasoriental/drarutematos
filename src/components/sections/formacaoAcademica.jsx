@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import tempImg from "../../assets/images/tempImage512.png";
+import univCoimbra from "../../assets/images/formacao_academica/universidade_de_coimbra.webp";
+import opp from "../../assets/images/formacao_academica/ordem_dos_psicologos_portugueses.webp";
+import instPPC from "../../assets/images/formacao_academica/instituto_portugues_de_psicoterapia_corporal.webp";
 
 import AwardSVG from "../../assets/svgs/award.jsx";
 import BookSVG from "../../assets/svgs/book.jsx";
@@ -34,7 +36,7 @@ export default function FormacaoAcademia() {
   const arrEnsinoSuperior = [
     {
       id: 0,
-      imagem: tempImg,
+      imagem: univCoimbra,
       curso:
       "Mestrado em Intervenções Cognitivo-Comportamentais em Psicologia Clínica e da Saúde",
       instituicao:
@@ -43,7 +45,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 1,
-      imagem: tempImg,
+      imagem: univCoimbra,
       curso: "Licenciatura em Psicologia",
       instituicao:
         "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
@@ -54,7 +56,7 @@ export default function FormacaoAcademia() {
   const arrCursosEFormacoes = [
     {
       id: 0,
-      imagem: tempImg,
+      imagem: opp,
       curso: "O Profissional no Âmbito dos Cuidados Paliativos",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "04/2024 - 04/2024",
@@ -63,7 +65,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 1,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Literacia em Saúde, o Papel do Psicólogo",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "04/2024 - 04/2024",
@@ -72,7 +74,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 2,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Intervenção Com Crianças E Jovens Em Risco",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "01/2024 - 01/2024",
@@ -81,7 +83,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 3,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Intervenção Psicológica Em Problemas Ligados Ao Álcool",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "01/2024 - 01/2024",
@@ -90,7 +92,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 4,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Intervenção Psicológica em Situações de Violência Doméstica",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "01/2024 - 01/2024",
@@ -99,7 +101,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 5,
-      imagem: tempImg,
+      imagem: opp,
       curso:
         "Avaliação Psicológica de Condutores/as e Candidatos/as a Condutor/a",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -109,7 +111,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 6,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Educação Financeira e Psicologia",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
@@ -118,7 +120,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 7,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Intervenção Psicológica Com Adultos Mais Velhos",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
@@ -127,7 +129,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 8,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Marketing Pessoal E Profissional",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
@@ -136,7 +138,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 9,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Intervenção Psicológica Com Pessoas LGBTQ",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "11/2023 - 11/2023",
@@ -145,7 +147,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 10,
-      imagem: tempImg,
+      imagem: opp,
       curso:
         "Intervenção Psicológica com Pessoas Refugiadas e Requerentes de Asilo",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -155,7 +157,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 11,
-      imagem: tempImg,
+      imagem: opp,
       curso: "Participação nos Workshops EmCarreira",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "06/2023 - 06/2023",
@@ -164,7 +166,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 12,
-      imagem: tempImg,
+      imagem: univCoimbra,
       curso: "Participação no Ciclo de Workshops de Direitos Humanos",
       instituicao: "Amnistia internacional da Universidade de Coimbra",
       periodo: "06/2021 - 06/2021",
@@ -173,7 +175,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 13,
-      imagem: tempImg,
+      imagem: univCoimbra,
       curso: 'Participação no Webinar "Infoday do Projeto TEACHmi"',
       instituicao:
         "Observatório de Cidadania e Intervenção Social da Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
@@ -183,7 +185,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 14,
-      imagem: tempImg,
+      imagem: univCoimbra,
       curso:
         'Participação no Seminário Internacional de Psicologia do Bebé "Cucu, Bebé!"',
       instituicao: "Babylab da Universidade de Coimbra",
@@ -192,7 +194,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 15,
-      imagem: tempImg,
+      imagem: instPPC,
       curso: "Simpósio Saúde Emocional",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
@@ -200,7 +202,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 16,
-      imagem: tempImg,
+      imagem: instPPC,
       curso:
         "Participação no Workshop Corpo, Regulação Emocional e Relação Terapêutica",
       instituicao: "Instituto Português de Psicoterapia Corporal",
@@ -209,7 +211,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 17,
-      imagem: tempImg,
+      imagem: instPPC,
       curso: "Participação no Workshop de Técnicas de Psicoterapia Corporal",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
@@ -217,7 +219,7 @@ export default function FormacaoAcademia() {
     },
     {
       id: 17,
-      imagem: tempImg,
+      imagem: univCoimbra,
       curso: "Participação no Treino da Mente Compassiva",
       instituicao:
         "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",

@@ -1,6 +1,19 @@
 import { useEffect, useState } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
-import tempImg from "../../assets/images/tempImage512.png";
+import criatividade from "../../assets/images/minhas_competencias/transversais/criatividade.webp";
+import comunicacao from "../../assets/images/minhas_competencias/transversais/comunicacao.webp";
+import colaboracao from "../../assets/images/minhas_competencias/transversais/colaboracao.webp";
+import empatia from "../../assets/images/minhas_competencias/transversais/empatia.webp";
+import flexibilidade from "../../assets/images/minhas_competencias/transversais/flexibilidade.webp";
+import organizacao from "../../assets/images/minhas_competencias/transversais/organizacao.webp";
+import pensamentoCritico from "../../assets/images/minhas_competencias/transversais/pensamento_critico.webp";
+import resolucaoDeProblema from "../../assets/images/minhas_competencias/transversais/resolucao_de_problema.webp";  
+import atualizacaoDeConhecimento from "../../assets/images/minhas_competencias/tecnicas/atualizacao_de_conhecimento.webp";
+import avaliacaoPsicologica from "../../assets/images/minhas_competencias/tecnicas/avaliacao_psicologica.webp";
+import documentacaoERelatorios from "../../assets/images/minhas_competencias/tecnicas/documentacao_e_relatorios.webp";
+import eticaEConfidencialidade from "../../assets/images/minhas_competencias/tecnicas/etica_e_confidencialidade.webp";
+import intervencaoCC from "../../assets/images/minhas_competencias/tecnicas/intervencao_cc.webp";
+import terceiraGeracao from "../../assets/images/minhas_competencias/tecnicas/terceira_geracao.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -43,56 +56,56 @@ export default function MinhasCompetencias() {
     /* tipo: true === Competencias Técnicas */
     {
       id: 0,
-      imagem: tempImg,
+      imagem: criatividade,
       competencia: "Criatividade",
       nivel: 7,
       tipo: false,
     },
     {
       id: 1,
-      imagem: tempImg,
+      imagem: comunicacao,
       competencia: "Comunicação",
       nivel: 8,
       tipo: false,
     },
     {
       id: 2,
-      imagem: tempImg,
+      imagem: colaboracao,
       competencia: "Colaboração",
       nivel: 8,
       tipo: false,
     },
     {
       id: 3,
-      imagem: tempImg,
+      imagem: flexibilidade,
       competencia: "Flexibilidade e Adaptabilidade",
       nivel: 9,
       tipo: false,
     },
     {
       id: 4,
-      imagem: tempImg,
+      imagem: empatia,
       competencia: "Empatia",
       nivel: 8,
       tipo: false,
     },
     {
       id: 5,
-      imagem: tempImg,
+      imagem: organizacao,
       competencia: "Organização",
       nivel: 8,
       tipo: false,
     },
     {
       id: 6,
-      imagem: tempImg,
+      imagem: pensamentoCritico,
       competencia: "Pensamento Crítico",
       nivel: 8,
       tipo: false,
     },
     {
       id: 7,
-      imagem: tempImg,
+      imagem: resolucaoDeProblema,
       competencia: "Resolução de Problemas",
       nivel: 8,
       tipo: false,
@@ -100,42 +113,42 @@ export default function MinhasCompetencias() {
 
     {
       id: 8,
-      imagem: tempImg,
+      imagem: avaliacaoPsicologica,
       competencia: "Avaliação Psicológica",
       nivel: 9,
       tipo: true,
     },
     {
       id: 9,
-      imagem: tempImg,
+      imagem: intervencaoCC,
       competencia: "Téc. de Interv. Cogn.-Comport.",
       nivel: 9,
       tipo: true,
     },
     {
       id: 10,
-      imagem: tempImg,
+      imagem: atualizacaoDeConhecimento,
       competencia: "Atualização de Conhecimento",
       nivel: 8,
       tipo: true,
     },
     {
       id: 11,
-      imagem: tempImg,
+      imagem: documentacaoERelatorios,
       competencia: "Documentação e Relatórios",
       nivel: 8,
       tipo: true,
     },
     {
       id: 12,
-      imagem: tempImg,
+      imagem: eticaEConfidencialidade,
       competencia: "Ética e Confidencialidade",
       nivel: 10,
       tipo: true,
     },
     {
       id: 13,
-      imagem: tempImg,
+      imagem: terceiraGeracao,
       competencia: "Terapias de 3ª geração",
       nivel: 7,
       tipo: true,
@@ -154,7 +167,7 @@ export default function MinhasCompetencias() {
         <div className="container-minhas-competencias-div">
           <div className="container-minhas-competencias-transversais">
             <p className="container-minhas-competencias-tecnicas-e-transversais-titulo">
-              Competéncias Transversais
+              Competências Transversais
             </p>
             <div className="container-minhas-competencias-tecnicas-transversais-grade">
               <Swiper
@@ -204,7 +217,7 @@ export default function MinhasCompetencias() {
           </div>
           <div className="container-minhas-competencias-tecnicas">
             <p className="container-minhas-competencias-tecnicas-e-transversais-titulo">
-              Competéncias Técnicas
+              Competências Técnicas
             </p>
             <div className="container-minhas-competencias-tecnicas-grade">
               <Swiper

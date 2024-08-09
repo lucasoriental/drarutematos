@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import tempImg from "../../../assets/images/tempImage512.png";
+import clinicadopaiao from "../../../assets/images/experiencias_profissionais/clinica_do_paiao.webp";
+import condeixa from "../../../assets/images/experiencias_profissionais/centro_de_saude_condeixa_a_nova.webp";
+import lavosPet from "../../../assets/images/experiencias_profissionais/lavos_pet.webp";
+import casa from "../../../assets/images/experiencias_profissionais/CASA.webp";
+import psike from "../../../assets/images/experiencias_profissionais/psike.webp";
+import mentalschool from "../../../assets/images/experiencias_profissionais/mental_school.webp";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import ProfessionalExperiencesModal from "./professionalExperiencesModal";
 
@@ -15,7 +20,7 @@ export default function ExperienciaProfissional() {
   let profExp = [
     {
       id: 1,
-      imagem: tempImg,
+      imagem: clinicadopaiao,
       titulo: "Psicóloga Júnior",
       empresa: "Clínica do Paião",
       responsabilidades:
@@ -24,7 +29,7 @@ export default function ExperienciaProfissional() {
     },
     {
       id: 2,
-      imagem: tempImg,
+      imagem: condeixa,
       titulo: "Estágio Curricular",
       empresa: "Centro de Saúde de Condeixa-a-Nova",
       responsabilidades:
@@ -33,7 +38,7 @@ export default function ExperienciaProfissional() {
     },
     {
       id: 3,
-      imagem: tempImg,
+      imagem: lavosPet,
       titulo: "Part-time",
       empresa: "LavosPet - Figueira da Foz",
       responsabilidades:
@@ -42,7 +47,7 @@ export default function ExperienciaProfissional() {
     },
     {
       id: 4,
-      imagem: tempImg,
+      imagem: casa,
       titulo: "Estágio de Verão",
       empresa: "CASA (Centro de Apoio ao Sem Abrigo) - Figueira da Foz",
       responsabilidades:
@@ -51,7 +56,7 @@ export default function ExperienciaProfissional() {
     },
     {
       id: 5,
-      imagem: tempImg,
+      imagem: mentalschool,
       titulo: "Estágio de Verão",
       empresa: "Mental School - Figueira da Foz",
       responsabilidades:
@@ -60,7 +65,7 @@ export default function ExperienciaProfissional() {
     },
     {
       id: 6,
-      imagem: tempImg,
+      imagem: psike,
       titulo: "Estágio de Verão",
       empresa: "Psike - Figueira da Foz",
       responsabilidades:
@@ -99,7 +104,8 @@ export default function ExperienciaProfissional() {
       <div id="container-conteudo-experiencias-profissionais-light">
         <p className="container-titulo-da-seccao">Experiências Profissionais</p>
         <p className="container-sub-titulo-da-seccao">
-          Conheça o meu percurso profissional e as experiências que fundamentam o meu trabalho na área da psicologia.
+          Conheça o meu percurso profissional e as experiências que fundamentam
+          o meu trabalho na área da psicologia.
         </p>
         <div
           className="container-todas-as-experiencias-profissionais"

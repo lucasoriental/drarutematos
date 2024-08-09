@@ -1,7 +1,7 @@
 /* import tempImg from "../../assets/images/tempImage512.png"; */
-import consultaOnline from "../../assets/images/consultaOnline.png";
-import clinicaDoPaiao from "../../assets/images/clinicaDoPaiao.webp";
-import casaFigFoz from "../../assets/images/CASAFigFoz.png";
+import consultaOnline from "../../assets/images/contactos_e_marcacoes/consultaOnline.webp";
+import clinicaDoPaiao from "../../assets/images/contactos_e_marcacoes/logo_clinica_do_paiao.webp";
+import casaFigFoz from "../../assets/images/contactos_e_marcacoes/CASAFigFoz.webp";
 import TelephoneSVG from "../../assets/svgs/telephoneSVG";
 /* import InstagramSvg from "../../assets/svgs/InstagramSVG";
 import LinkedInSVG from "../../assets/svgs/LinkedinSVG";
@@ -16,25 +16,25 @@ export default function ContactosEMarcacoes() {
       link: "mailto:ruteimatos@gmail.com",
     },
     {
-      id: 0,
+      id: 1,
       imagem: <i className="fa-solid fa-phone"></i>,
       nomeRedeSocial: "928 166 888",
       link: "https://web.whatsapp.com/send?phone=351928166888",
     },
     {
-      id: 0,
+      id: 2,
       imagem: <i className="fa-brands fa-instagram"></i>,
       nomeRedeSocial: "@ruteimatos",
       link: "#",
     },
     {
-      id: 1,
+      id: 3,
       imagem: <i className="fa-brands fa-linkedin-in"></i>,
       nomeRedeSocial: "Rute Isabel Matos",
       link: "https://www.linkedin.com/in/rutematos/",
     },
     {
-      id: 2,
+      id: 4,
       imagem: <i className="fa-brands fa-facebook-f"></i>,
       nomeRedeSocial: "Rute Isabel Matos",
       link: "#",

@@ -1,21 +1,19 @@
 import { useState } from "react";
-import callToActionImg from "../../../assets/images/callToActionwebp.webp";
+import callToActionImg from "../../../assets/images/meus_servicos/callToActionwebp.webp";
 import MyServiceModal from "./myServiceModal";
 import { Link } from "react-scroll";
 import FormasDeAtendimentoSVG from "../../../assets/svgs/formasDeAtendimento";
 import PrincipaiServicosSVG from "../../../assets/svgs/principaisServicos";
 import BeneficiosSVG from "../../../assets/svgs/beneficios";
 
-import terapiaIndividual from "../../../assets/images/terapiaIndividual.jpg";
-import terapiaEmGrupo from "../../../assets/images/terapiaEmGrupo.jpg";
-import terapiaFamiliar from "../../../assets/images/terapiaFamiliar.jpg";
-import rastreioPsicologico from "../../../assets/images/rastreioPsicologico.jpg";
-import realizacaoDeWorkshops from "../../../assets/images/realizacaoDeWorkshops.jpg";
+import terapiaIndividual from "../../../assets/images/meus_servicos/terapia_individual.webp";
+import terapiaEmGrupo from "../../../assets/images/meus_servicos/terapia_em_grupo.webp";
+import terapiaFamiliar from "../../../assets/images/meus_servicos/terapia_familiar.webp";
+import rastreioPsicologico from "../../../assets/images/meus_servicos/rastreio_psicologico.webp";
+import realizacaoDeWorkshops from "../../../assets/images/meus_servicos/workshops.webp";
 
-import consultaOnline from "../../../assets/images/consultaOnline.jpg";
-import consultaPresencial from "../../../assets/images/consultaPresencial.jpg";
-
-import lotusIcon from "../../../assets/images/lotus.png";
+import consultaOnline from "../../../assets/images/meus_servicos/consulta_online.webp";
+import consultaPresencial from "../../../assets/images/meus_servicos/consulta_presencial.webp";
 
 export default function MyServices() {
   let headerHeight;
@@ -207,7 +205,7 @@ export default function MyServices() {
             {arrBeneficios.map((item) => {
               return (
                 <div className="container-beneficios-item" key={item.id}>
-                  <img src={lotusIcon} alt="icone" />
+                  {/* <img src={lotusIcon} alt="icone" /> */}
                   <p>{item.beneficio}</p>
                 </div>
               );
