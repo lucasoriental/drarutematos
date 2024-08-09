@@ -60,7 +60,7 @@ export default function Header() {
             offset={-headerHeight}
             duration={1000}
           >
-            Exp. Profissional
+            Experiência Profissional
           </Link>
           <Link
             activeClass="active"
@@ -164,7 +164,7 @@ export default function Header() {
               duration={1000}
               onClick={handleClickLink}
             >
-              Exp. Profissional
+              Experiência Profissional
             </Link>
             <Link
               activeClass="active"
