@@ -1,10 +1,11 @@
-import fotoDePerfil from "../../assets/images/sobreMim.jpg";
+import fotoDePerfil from "../../assets/images/sobre_mim/sobreMim.webp";
 
 export default function SobreMim() {
   return (
     <div id="container-background-sobre-mim-dark">
       <div id="container-conteudo-sobre-mim-dark">
         <p className="container-titulo-da-seccao">Sobre Mim</p>
+        <p style={{textAlign: "center", marginTop: "20px", fontWeight:"bold", fontSize: "15px"}}>Cédula Profissional: <span>132557</span></p>
         <div className="container-sobre-mim-div">
           <img
             src={fotoDePerfil}
