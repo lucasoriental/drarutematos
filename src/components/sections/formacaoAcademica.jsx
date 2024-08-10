@@ -38,9 +38,9 @@ export default function FormacaoAcademia() {
       id: 0,
       imagem: univCoimbra,
       curso:
-      "Mestrado em Intervenções Cognitivo-Comportamentais em Psicologia Clínica e da Saúde",
+        "Mestrado em Intervenções Cognitivo-Comportamentais em Psicologia Clínica e da Saúde",
       instituicao:
-      "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
+        "Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
       periodo: "2021 - 2023",
     },
     {
@@ -88,7 +88,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "01/2024 - 01/2024",
       tempo: "10",
-      cert: problAlcool
+      cert: problAlcool,
     },
     {
       id: 4,
@@ -97,7 +97,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "01/2024 - 01/2024",
       tempo: "10",
-      cert: violDom
+      cert: violDom,
     },
     {
       id: 5,
@@ -107,7 +107,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
       tempo: "10",
-      cert: psicCond
+      cert: psicCond,
     },
     {
       id: 6,
@@ -116,7 +116,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
       tempo: "10",
-      cert: educFinan
+      cert: educFinan,
     },
     {
       id: 7,
@@ -125,7 +125,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
       tempo: "10",
-      cert: psicAdultVel
+      cert: psicAdultVel,
     },
     {
       id: 8,
@@ -134,7 +134,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "12/2023 - 12/2023",
       tempo: "10",
-      cert: mktPesEProf
+      cert: mktPesEProf,
     },
     {
       id: 9,
@@ -143,7 +143,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "11/2023 - 11/2023",
       tempo: "10",
-      cert: psicLSGBT
+      cert: psicLSGBT,
     },
     {
       id: 10,
@@ -153,7 +153,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "11/2023 - 11/2023",
       tempo: "10",
-      cert: refEAsilo
+      cert: refEAsilo,
     },
     {
       id: 11,
@@ -162,7 +162,7 @@ export default function FormacaoAcademia() {
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "06/2023 - 06/2023",
       tempo: "20",
-      cert: emCarreira
+      cert: emCarreira,
     },
     {
       id: 12,
@@ -171,7 +171,7 @@ export default function FormacaoAcademia() {
       instituicao: "Amnistia internacional da Universidade de Coimbra",
       periodo: "06/2021 - 06/2021",
       tempo: "10",
-      cert: direitosHumanos
+      cert: direitosHumanos,
     },
     {
       id: 13,
@@ -181,7 +181,7 @@ export default function FormacaoAcademia() {
         "Observatório de Cidadania e Intervenção Social da Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
       periodo: "01/2020 - 01/2020",
       tempo: "1",
-      cert: webnar
+      cert: webnar,
     },
     {
       id: 14,
@@ -218,7 +218,7 @@ export default function FormacaoAcademia() {
       tempo: "X",
     },
     {
-      id: 17,
+      id: 18,
       imagem: univCoimbra,
       curso: "Participação no Treino da Mente Compassiva",
       instituicao:
@@ -287,7 +287,9 @@ export default function FormacaoAcademia() {
       <div id="container-conteudo-formacao-academica-dark">
         <p className="container-titulo-da-seccao">Formação Académica</p>
         <p className="container-sub-titulo-da-seccao">
-          Explore a minha formação académica e veja como o conhecimento adquirido nas diversas etapas da minha educação contribui para a qualidade do meu trabalho.
+          Explore a minha formação académica e veja como o conhecimento
+          adquirido nas diversas etapas da minha educação contribui para a
+          qualidade do meu trabalho.
         </p>
 
         <div className="container-formacao-academica-div">
