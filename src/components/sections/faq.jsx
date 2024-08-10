@@ -221,7 +221,7 @@ export default function FAQ() {
   return (
     <div id="container-background-FAQ-dark">
       <div id="container-conteudo-FAQ-dark">
-        <p className="container-titulo-da-seccao">F.A.Q.</p>
+        <p className="container-titulo-da-seccao">Perguntas Mais Frequentes</p>
         <p className="container-sub-titulo-da-seccao">
           Nesta secção você encontrará informações sobre as perguntas mais
           frequentes feitas a mim.
@@ -259,8 +259,8 @@ export default function FAQ() {
         </div>
         <div className="container-FAQ-mais-perguntas-div">
           <p className="container-FAQ-mais-perguntas-pergunta">
-            Sua dúvida não está entre as mais perguntadas? Envia-me a tua dúvida
-            para que possa te ajudar clicando <a href="#">aqui</a>
+            Sua dúvida não está entre as mais perguntadas? Envia-me a sua dúvida
+            para que possa ajudar: <a style={{ textDecoration: "none", color: "black" }} href="mailto:ruteimatos@gmail.com">ruteimatos@gmail.com</a>
           </p>
         </div>
       </div>
