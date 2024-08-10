@@ -2,12 +2,13 @@ import { useState } from "react";
 import MenuHamburger from "../../assets/icon_menu_hamburger";
 import XIconSvg from "../../assets/icon_X";
 import { Link } from "react-scroll";
+import logo from "../../assets/images/logo.png";
 
 export default function Header() {
   let headerHeight;
 
   if (window.innerWidth > 800) {
-    headerHeight = 194;
+    headerHeight = 220;
   } else {
     headerHeight = 84;
   }
@@ -38,7 +39,7 @@ export default function Header() {
           offset={-headerHeight}
           duration={1000}
         >
-          <p id="header-desktop-title">Dra. Rute Isabel Matos</p>
+          <img src={logo} alt="logo" />
         </Link>
         <canvas id="header-desktop-DivisionBar" />
         <nav>
