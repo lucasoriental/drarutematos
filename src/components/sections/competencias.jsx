@@ -7,7 +7,7 @@ import empatia from "../../assets/images/minhas_competencias/transversais/empati
 import flexibilidade from "../../assets/images/minhas_competencias/transversais/flexibilidade.webp";
 import organizacao from "../../assets/images/minhas_competencias/transversais/organizacao.webp";
 import pensamentoCritico from "../../assets/images/minhas_competencias/transversais/pensamento_critico.webp";
-import resolucaoDeProblema from "../../assets/images/minhas_competencias/transversais/resolucao_de_problema.webp";  
+import resolucaoDeProblema from "../../assets/images/minhas_competencias/transversais/resolucao_de_problema.webp";
 import atualizacaoDeConhecimento from "../../assets/images/minhas_competencias/tecnicas/atualizacao_de_conhecimento.webp";
 import avaliacaoPsicologica from "../../assets/images/minhas_competencias/tecnicas/avaliacao_psicologica.webp";
 import documentacaoERelatorios from "../../assets/images/minhas_competencias/tecnicas/documentacao_e_relatorios.webp";
@@ -55,99 +55,98 @@ export default function MinhasCompetencias() {
     /* tipo: false === Competênicas Transversais */
     /* tipo: true === Competencias Técnicas */
     {
-      id: 0,
+      id: 1,
       imagem: criatividade,
       competencia: "Criatividade",
       nivel: 7,
       tipo: false,
     },
     {
-      id: 1,
+      id: 2,
       imagem: comunicacao,
       competencia: "Comunicação",
       nivel: 8,
       tipo: false,
     },
     {
-      id: 2,
+      id: 3,
       imagem: colaboracao,
       competencia: "Colaboração",
       nivel: 8,
       tipo: false,
     },
     {
-      id: 3,
+      id: 4,
       imagem: flexibilidade,
       competencia: "Flexibilidade e Adaptabilidade",
       nivel: 9,
       tipo: false,
     },
     {
-      id: 4,
+      id: 5,
       imagem: empatia,
       competencia: "Empatia",
       nivel: 8,
       tipo: false,
     },
     {
-      id: 5,
+      id: 6,
       imagem: organizacao,
       competencia: "Organização",
       nivel: 8,
       tipo: false,
     },
     {
-      id: 6,
+      id: 7,
       imagem: pensamentoCritico,
       competencia: "Pensamento Crítico",
       nivel: 8,
       tipo: false,
     },
     {
-      id: 7,
+      id: 8,
       imagem: resolucaoDeProblema,
       competencia: "Resolução de Problemas",
       nivel: 8,
       tipo: false,
     },
-
     {
-      id: 8,
+      id: 9,
       imagem: avaliacaoPsicologica,
       competencia: "Avaliação Psicológica",
       nivel: 9,
       tipo: true,
     },
     {
-      id: 9,
+      id: 10,
       imagem: intervencaoCC,
       competencia: "Téc. de Interv. Cogn.-Comport.",
       nivel: 9,
       tipo: true,
     },
     {
-      id: 10,
+      id: 11,
       imagem: atualizacaoDeConhecimento,
       competencia: "Atualização de Conhecimento",
       nivel: 8,
       tipo: true,
     },
     {
-      id: 11,
+      id: 12,
       imagem: documentacaoERelatorios,
       competencia: "Documentação e Relatórios",
       nivel: 8,
       tipo: true,
     },
     {
-      id: 12,
+      id: 13,
       imagem: eticaEConfidencialidade,
       competencia: "Ética e Confidencialidade",
       nivel: 10,
       tipo: true,
     },
     {
-      id: 13,
+      id: 14,
       imagem: terceiraGeracao,
       competencia: "Terapias de 3ª geração",
       nivel: 7,
@@ -182,17 +181,17 @@ export default function MinhasCompetencias() {
                   for (let i = 0; i < 10; i++) {
                     if (i < item.nivel) {
                       levelElements.push(
-                        <canvas className="item-minhas-competencias-nivel-barra-On" />
+                        <canvas key={i} className="item-minhas-competencias-nivel-barra-On" />
                       );
                     } else {
                       levelElements.push(
-                        <canvas className="item-minhas-competencias-nivel-barra-Off" />
+                        <canvas key={i} className="item-minhas-competencias-nivel-barra-Off" />
                       );
                     }
                   }
                   return (
                     !item.tipo && (
-                      <SwiperSlide key={item.id} virtualIndex={index}>
+                      <SwiperSlide key={item.id} id={item.id} virtualIndex={index}>
                         <div className="item-minhas-competencias-div">
                           <img
                             src={item.imagem}
@@ -232,17 +231,17 @@ export default function MinhasCompetencias() {
                   for (let i = 0; i < 10; i++) {
                     if (i < item.nivel) {
                       levelElements.push(
-                        <canvas className="item-minhas-competencias-nivel-barra-On" />
+                        <canvas key={i} className="item-minhas-competencias-nivel-barra-On" />
                       );
                     } else {
                       levelElements.push(
-                        <canvas className="item-minhas-competencias-nivel-barra-Off" />
+                        <canvas key={i} className="item-minhas-competencias-nivel-barra-Off" />
                       );
                     }
                   }
                   return (
                     item.tipo && (
-                      <SwiperSlide key={item.id} virtualIndex={index}>
+                      <SwiperSlide key={item.id} id={item.id} virtualIndex={index}>
                         <div className="item-minhas-competencias-div">
                           <img
                             src={item.imagem}
