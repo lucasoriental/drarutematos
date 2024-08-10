@@ -44,21 +44,15 @@ header {
 }
 
 #header-desktop-DivisionBar {
-  background-color: #292929;
+  background-color: #A57F78;
   height: 2px;
   width: 100%;
   margin: 10px 0px;
 }
 
-#header-desktop-title {
-  font-size: 35px;
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: var(--secondDark);
+#header-desktop img {
   cursor: pointer;
-  transition: 600ms;
-  opacity: 100%;
+  height: 70px;
 }
 
 #header-desktop-title:hover,
@@ -114,7 +108,7 @@ header {
   font-family: "Dancing Script", "Cursive";
   font-weight: bold;
   font-size: 25px;
-  color: var(--secondDark);
+  color: #A57F78;
   cursor: pointer;
   opacity: 100%;
 }
@@ -181,6 +175,7 @@ header {
 //---------------------------------------------------------
 
 #container-main {
+  font-family: "Montserrat";
   padding-top: 250px;
   display: flex;
   width: 90%;
@@ -211,6 +206,27 @@ header {
   }
 }
 
+.container-main-cedula{
+  font-size: 20px;
+  background-color: #FFF;
+  color: rgb(44, 44, 44);
+  padding: 10px 0;
+  text-align: center; 
+  border: 1px solid black;
+
+  @media (max-width: 840px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 16px;;
+  }
+}
+
+.container-main-cedula span {
+  font-weight: bold;
+}
+
 .container-main-texts {
   width: 90%;
   max-width: 600px;
@@ -224,7 +240,7 @@ header {
   }
 }
 
-#container-main p {
+.container-main-texts p {
   font-family: "Montserrat";
   font-size: 25px;
   text-align: justify;
@@ -346,26 +362,26 @@ header {
 
 .container-titulo-da-seccao {
   //margin-top: 50px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
   text-align: center;
   color: var(--textColor1);
 
-  @media (max-width: 700px) {
-    font-size: 35px;
+  @media (max-width: 775px) {
+    font-size: 40px;
   }
-  @media (max-width: 500px) {
-    font-size: 25px;
+  @media (max-width: 520px) {
+    font-size: 30px;
   }
 }
 
 .container-sub-titulo-da-seccao {
-  text-align: justify;
+  text-align: center;
   max-width: 1100px;
   width: 90%;
   margin: 0 auto;
   font-size: 20px;
-  margin: 20px auto 0px;
+  margin: 40px auto 0px;
 
   @media (max-width: 800px) {
     font-size: 17px;
@@ -512,11 +528,11 @@ header {
 .modal-body {
   display: flex;
   margin: 20px auto;
-  padding-top: 70px;
+  padding-top: 90px;
   width: 90%;
 
   @media (max-width: 800px) {
-    padding-top: 40px;
+    padding-top: 60px;
     flex-direction: column;
     align-items: center;
   }
@@ -664,6 +680,12 @@ body.modal-open {
   }
 }
 
+.container-beneficios-item i {
+  margin-right: 20px;
+  color: limegreen;
+  font-size: 20px;
+}
+
 .container-beneficios-item img {
   width: 35px;
   height: 35px;
@@ -751,13 +773,13 @@ body.modal-open {
   }
 }
 
-.container-call-to-action-link button {
+.call-to-action-button {
   text-decoration: none;
   cursor: pointer;
   transition: 400ms;
 }
 
-.container-call-to-action-link button:hover {
+.call-to-action-button:hover {
   transition: 400ms;
   background-color: #545043;
 }
@@ -968,11 +990,9 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .modal-experiencia-profissional-imagem {
-  max-width: 125px;
-  //max-height: 125px;
+  width: 125px;
+  height: 125px;
   object-fit: cover;
-  width: 90%;
-  //height: 90%;
   float: left;
   margin-left: 25px;
   overflow-x: hidden;
@@ -1274,7 +1294,6 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .container-sobre-mim-texto {
-  text-indent: 40px;
   font-size: 17px;
   text-align: justify;
   letter-spacing: 0.3px;
@@ -1326,6 +1345,7 @@ body.cada-experiencia-profissional-card-item {
 .item-minhas-competencias-imagem {
   width: 125px;
   height: 125px;
+  border-radius: 10px;
   overflow-y: hidden;
   object-fit: cover;
 }
@@ -1910,7 +1930,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .container-FAQ-mais-perguntas-pergunta {
-  text-align: justify;
+  text-align: center;
   font-size: 20px;
   width: 90%;
 }
