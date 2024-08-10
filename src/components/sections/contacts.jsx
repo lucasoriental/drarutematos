@@ -19,13 +19,13 @@ export default function ContactosEMarcacoes() {
       id: 1,
       imagem: <i className="fa-solid fa-phone"></i>,
       nomeRedeSocial: "928 166 888",
-      link: "https://web.whatsapp.com/send?phone=351928166888",
+      link: "tel:+351928166888",
     },
     {
       id: 2,
       imagem: <i className="fa-brands fa-instagram"></i>,
-      nomeRedeSocial: "@ruteimatos",
-      link: "#",
+      nomeRedeSocial: "@rutematos_psicologa",
+      link: "https://instagram.com/rutematos_psicologa",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ export default function ContactosEMarcacoes() {
       id: 4,
       imagem: <i className="fa-brands fa-facebook-f"></i>,
       nomeRedeSocial: "Rute Isabel Matos",
-      link: "#",
+      link: "https://facebook.com/rutematospsicologa",
     },
   ];
 
