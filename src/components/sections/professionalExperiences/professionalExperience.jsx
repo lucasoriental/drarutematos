@@ -79,11 +79,11 @@ export default function ExperienciaProfissional() {
   useEffect(() => {
     const updateItemsPerPage = () => {
       const width = window.innerWidth;
-      if (width < 610) {
+      if (width < 720) {
         setItemsPerPage(1);
-      } else if (width < 850) {
+      } else if (width < 1100) {
         setItemsPerPage(2);
-      } else if (width < 1200) {
+      } else if (width < 1480) {
         setItemsPerPage(3);
       } else {
         setItemsPerPage(4);
@@ -107,17 +107,10 @@ export default function ExperienciaProfissional() {
           Conheça o meu percurso profissional e as experiências que fundamentam
           o meu trabalho na área da psicologia.
         </p>
-        <div
-          className="container-todas-as-experiencias-profissionais"
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-          }}
-        >
+        <div className="container-todas-as-experiencias-profissionais">
           <Swiper
             modules={[Virtual, Pagination, Navigation]}
-            spaceBetween={50}
+            spaceBetween={0}
             slidesPerView={itemsPerPage}
             navigation={true}
             virtual
