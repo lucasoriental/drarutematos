@@ -9,14 +9,19 @@ export default function mainPage() {
   let headerHeight;
 
   if (window.innerWidth > 800) {
-    headerHeight = 194;
+    headerHeight = 220;
   } else {
     headerHeight = 84;
   }
 
   return (
     <div id="container-main">
-      <img src={fotoDePerfil} alt="Foto de Perfil" />
+      <div>
+        <img src={fotoDePerfil} alt="Foto de Perfil" />
+        <p className="container-main-cedula">
+          Cédula Profissional: <span>132557</span>
+        </p>
+      </div>
       <div className="container-main-texts">
         <div>
           <p>
@@ -24,7 +29,9 @@ export default function mainPage() {
             <span>Cognitivo-Comportamental (TCC).</span>
           </p>
           <p>
-            Aqui, apresento os <span>serviços</span> que disponibilizo na área da psicologia, bem como o meu <span>percurso académico</span> e <span>profissional</span>.
+            Aqui, apresento os <span>serviços</span> que disponibilizo na área
+            da psicologia, bem como o meu <span>percurso académico</span> e{" "}
+            <span>profissional</span>.
           </p>
         </div>
         <Link
@@ -38,13 +45,25 @@ export default function mainPage() {
         </Link>
       </div>
       <nav>
-        <a href="#" className="container-main-link-rede-social" target="_blank">
+        <a
+          href="https://facebook.com/rutematospsicologa"
+          className="container-main-link-rede-social"
+          target="_blank"
+        >
           <FacebookSvg color="#9D957B" size="40" />
         </a>
-        <a href="#" className="container-main-link-rede-social" target="_blank">
+        <a
+          href="https://instagram.com/rutematos_psicologa"
+          className="container-main-link-rede-social"
+          target="_blank"
+        >
           <InstagramSvg color="#9D957B" size="40" />
         </a>
-        <a href="#" className="container-main-link-rede-social" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/rutematos/"
+          className="container-main-link-rede-social"
+          target="_blank"
+        >
           <LinkedinSvg color="#9D957B" size="40" />
         </a>
       </nav>
