@@ -19,7 +19,7 @@ export default function MyServices() {
   let headerHeight;
 
   if (window.innerWidth > 800) {
-    headerHeight = 194;
+    headerHeight = 220;
   } else {
     headerHeight = 84;
   }
@@ -206,6 +206,7 @@ export default function MyServices() {
               return (
                 <div className="container-beneficios-item" key={item.id}>
                   {/* <img src={lotusIcon} alt="icone" /> */}
+                  <i className="fa-solid fa-check"></i>
                   <p>{item.beneficio}</p>
                 </div>
               );
@@ -240,13 +241,15 @@ export default function MyServices() {
               autoconhecimento e bem-estar? Entre em contato e agende sua
               consulta agora mesmo!
             </p>
-            <a
-              href="https://lucasoriental.com"
-              className="container-call-to-action-link"
-              target="_blank"
+            <Link
+              to="container-conteudo-contactos-e-marcacoes-light"
+              spy={true}
+              smooth={true}
+              offset={-headerHeight}
+              duration={1000}
             >
-              <button>Agende a sua consulta</button>
-            </a>
+              <button className="call-to-action-button">Agende a sua consulta</button>
+            </Link>
           </div>
           <img src={callToActionImg} alt="" />
         </div>
