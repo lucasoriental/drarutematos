@@ -1,11 +1,7 @@
-/* import tempImg from "../../assets/images/tempImage512.png"; */
 import consultaOnline from "../../assets/images/contactos_e_marcacoes/consultaOnline.webp";
 import clinicaDoPaiao from "../../assets/images/contactos_e_marcacoes/logo_clinica_do_paiao.webp";
 import casaFigFoz from "../../assets/images/contactos_e_marcacoes/CASAFigFoz.webp";
 import TelephoneSVG from "../../assets/svgs/telephoneSVG";
-/* import InstagramSvg from "../../assets/svgs/InstagramSVG";
-import LinkedInSVG from "../../assets/svgs/LinkedinSVG";
-import FacebookSVG from "../../assets/svgs/FacebookSVG"; */
 
 export default function ContactosEMarcacoes() {
   const arrRedesSociais = [
