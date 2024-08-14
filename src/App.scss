@@ -1,24 +1,23 @@
 :root {
-  --primaryLight: #efece2;
-  --secondLight: #fff;
-  --spanText: #9d957b;
-  --primaryDark: #444444;
-  --textColor1: #262626;
+  --backgroundHeader: #efece2;
+  --textColor: #403e36;
+  --lightColor: #9d957b;
+  --buttonColor: #c3ba9f;
+  --hoverButtonColor: #a9a494;
+  --white: #fff;
+  --backgroundModal: rgba(0, 0, 0, 0.5);
+  --linkColor: rgb(0, 89, 255);
+  //--backgroundSection: #c6a68d;
+  //--backgroundSection2: #f5f5f5;
+  //--backgroundSection3: #d8cfc4;
+  //--backgroundSection4: #b0b0b0;
 }
-/* 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  overflow: hidden;
-} */
 
 //Seção inteira do cabeçalho (Header)
 
 //Header Global
 header {
-  background-color: var(--primaryLight);
+  background-color: var(--backgroundHeader);
   width: 100%;
   position: fixed;
   display: flex;
@@ -44,7 +43,7 @@ header {
 }
 
 #header-desktop-DivisionBar {
-  background-color: #A57F78;
+  background-color: var(--lightColor);
   height: 2px;
   width: 100%;
   margin: 10px 0px;
@@ -53,11 +52,15 @@ header {
 #header-desktop img {
   cursor: pointer;
   height: 70px;
+
+  @media (max-width: 1005px) {
+    height: 50px;
+  }
 }
 
 #header-desktop-title:hover,
 #header-mobile-title:hover {
-  transition: 600ms;
+  transition: 500ms;
   opacity: 70%;
 }
 
@@ -74,7 +77,7 @@ header {
   font-family: "Montserrat";
   font-size: 15px;
   cursor: pointer;
-  transition: 400ms;
+  transition: 500ms;
 
   @media (max-width: 1005px) {
     font-size: 12.9px;
@@ -83,10 +86,11 @@ header {
 
 #header-desktop nav a:hover {
   font-weight: 500;
-  transition: 400ms;
+  transition: 500ms;
 }
 
 //Header para o Mobile
+
 #header-mobile {
   display: none;
 
@@ -98,8 +102,7 @@ header {
 #header-mobile-bar {
   width: 100%;
   display: flex;
-  //align-items: center;
-  padding: 15px 0px;
+  padding: 20px 0px;
 }
 
 #header-mobile-title {
@@ -108,7 +111,7 @@ header {
   font-family: "Dancing Script", "Cursive";
   font-weight: bold;
   font-size: 25px;
-  color: #A57F78;
+  color: var(--lightColor);
   cursor: pointer;
   opacity: 100%;
 }
@@ -129,7 +132,7 @@ header {
   left: 0;
   width: 348px;
   height: 100vh;
-  background-color: var(--primaryLight);
+  background-color: var(--backgroundHeader);
   z-index: 1;
   transition: 1s;
   transform: translateX(-100%);
@@ -151,15 +154,14 @@ header {
     padding: 20px 0px;
     text-align: center;
     text-decoration: none;
-    color: var(--White);
     font-weight: normal;
     cursor: pointer;
-    transition: 400ms;
+    transition: 500ms;
   }
 
   a:hover {
-    background-color: #a9a494;
-    transition: 400ms;
+    background-color: var(--hoverButtonColor);
+    transition: 500ms;
   }
 }
 
@@ -206,12 +208,12 @@ header {
   }
 }
 
-.container-main-cedula{
+.container-main-cedula {
   font-size: 20px;
-  background-color: #FFF;
-  color: rgb(44, 44, 44);
+  background-color: var(--white);
+  color: var(--textColor);
   padding: 10px 0;
-  text-align: center; 
+  text-align: center;
   border: 1px solid black;
 
   @media (max-width: 840px) {
@@ -219,7 +221,7 @@ header {
   }
 
   @media (max-width: 450px) {
-    font-size: 16px;;
+    font-size: 16px;
   }
 }
 
@@ -244,7 +246,7 @@ header {
   font-family: "Montserrat";
   font-size: 25px;
   text-align: justify;
-  color: var(--secondDark);
+  color: var(--textColor);
   margin-bottom: 10px;
 
   @media (max-width: 1005px) {
@@ -264,25 +266,25 @@ header {
   margin-top: 25px;
   width: 250px;
   height: 50px;
-  color: #fff;
-  background-color: var(--spanText);
+  color: var(--white);
+  background-color: var(--buttonColor);
   font-weight: bold;
   border: none;
   font-size: 14.5px;
   border-radius: 5px;
   cursor: pointer;
-  transition: 400ms;
+  transition: 500ms;
 }
 
 .container-main-texts button:hover {
-  background-color: #545043;
+  background-color: var(--hoverButtonColor);
   width: 253px;
   height: 53px;
-  transition: 400ms;
+  transition: 500ms;
 }
 
 .container-main-texts span {
-  color: var(--spanText);
+  color: var(--buttonColor);
   font-weight: bold;
 }
 
@@ -299,7 +301,7 @@ header {
 
 #container-main nav svg {
   margin: 10px 0px;
-  transition: 400ms;
+  transition: 500ms;
   cursor: pointer;
 
   @media (max-width: 800px) {
@@ -310,62 +312,68 @@ header {
 #container-main nav svg:hover {
   height: 45px;
   width: 45px;
-  transition: 400ms;
+  transition: 500ms;
 }
 
-//--------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
 
-//Secção Meus Serviços
+//Todas as secções com fundo diferentes de branco/neutro
 
 #container-background-meus-servicos-dark,
 #container-background-formacao-academica-dark,
 #container-background-sobre-mim-dark,
 #container-background-FAQ-dark {
   font-family: "Montserrat";
-  background-color: var(--primaryLight);
   display: flex;
   justify-content: center;
   margin: 90px auto 0px;
   padding: 100px 0px;
 }
 
-#container-conteudo-meus-servicos-dark,
+#container-background-meus-servicos-dark,
+#container-background-formacao-academica-dark,
+#container-background-sobre-mim-dark {
+  background-color: #e8e5db; // #e8e5db
+}
+
+#container-background-FAQ-dark {
+  background-color: #dbd8ce; // #dbd8ce
+}
+
 #container-conteudo-formacao-academica-dark,
-#container-conteudo-minhas-competencias-dark,
-#container-conteudo-FAQ-dark {
+#container-conteudo-FAQ-dark,
+#container-conteudo-experiencias-profissionais-light,
+#container-conteudo-minhas-competencias-light,
+#container-conteudo-contactos-e-marcacoes-light {
   max-width: 1600px;
   width: 90%;
 }
 
-.titulo-subseccao-icone-e-texto-div {
+// Todas as secções com fundo branco/neutro
+
+#container-background-experiencias-profissionais-light,
+#container-background-minhas-competencias-light,
+#container-background-contactos-e-marcacoes-light {
+  background-color: var(--white);
+  font-family: "Montserrat";
   display: flex;
-  margin: 70px auto 30px;
-  align-items: center;
+  justify-content: center;
+  margin: 90px auto 90px;
 }
 
-.container-titulo-subseccao {
-  font-size: 23px;
-  font-weight: 600;
-  //position: relative;
-  text-align: center;
-  //margin: 0 auto;
-  margin-left: 15px;
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
 
-  @media (max-width: 450px) {
-    font-size: 20px;
-  }
-
-  @media (max-width: 390px) {
-    font-size: 17px;
-  }
-}
+// Títulos principais e Sub títulos
 
 .container-titulo-da-seccao {
-  //margin-top: 50px;
   font-size: 60px;
   font-weight: 700;
   text-align: center;
-  color: var(--textColor1);
+  color: var(--textColor);
 
   @media (max-width: 775px) {
     font-size: 40px;
@@ -377,9 +385,7 @@ header {
 
 .container-sub-titulo-da-seccao {
   text-align: center;
-  max-width: 1100px;
   width: 90%;
-  margin: 0 auto;
   font-size: 20px;
   margin: 40px auto 0px;
 
@@ -392,7 +398,32 @@ header {
   }
 }
 
-//Serviços Prestados
+//Subtítulos das secções internas
+
+.titulo-subseccao-icone-e-texto-div {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container-titulo-subseccao {
+  font-size: 23px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 15px;
+
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 390px) {
+    font-size: 17px;
+  }
+}
+
+// Secção de Meus Serviços
+
+// Serviços Prestados
 
 .container-servicos-prestados-div {
   display: flex;
@@ -401,9 +432,11 @@ header {
   width: 90%;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 70px 0px;
 }
 
 .container-servicos-prestados-grade {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -450,7 +483,7 @@ header {
 
 .item-SP-botao {
   margin-top: 20px;
-  background-color: var(--spanText);
+  background-color: var(--buttonColor);
   border: none;
   width: 200px;
   height: 40px;
@@ -458,13 +491,12 @@ header {
   font-size: 15px;
   border-radius: 6px;
   font-weight: 600;
-  transition: 0.4s;
+  transition: 500ms;
 }
 
 .item-SP-botao:hover {
-  background-color: var(--primaryDark);
-  background-color: #545043;
-  transition: 0.4s;
+  background-color: var(--hoverButtonColor);
+  transition: 500ms;
   cursor: pointer;
 }
 
@@ -476,7 +508,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--backgroundModal);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,7 +517,7 @@ header {
 
 .modal-container {
   margin: 0;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   width: 750px;
   position: relative;
@@ -500,7 +532,7 @@ header {
 
 .modal-header {
   display: flex;
-  background-color: var(--spanText);
+  background-color: var(--buttonColor);
   height: 70px;
   align-items: center;
   position: fixed;
@@ -540,7 +572,7 @@ header {
 
 .modal-body-meus-servicos-texto {
   text-align: justify;
-  color: var(--textColor1);
+  color: var(--textColor);
   line-height: 1.5;
 
   @media (max-width: 800px) {
@@ -562,7 +594,7 @@ body.modal-open {
 }
 
 .modal-container::-webkit-scrollbar-thumb {
-  background: var(--spanText);
+  background-color: var(--buttonColor);
   border-radius: 8px;
 }
 
@@ -580,9 +612,11 @@ body.modal-open {
   width: 90%;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 70px 0px;
 }
 
 .container-formas-atendimento-grade {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -637,6 +671,11 @@ body.modal-open {
 
 //Benefícios
 
+.container-beneficios-background-div {
+  padding: 70px 0px;
+  background-color: var(--white);
+}
+
 .container-beneficios-div {
   display: flex;
   flex-direction: column;
@@ -647,6 +686,7 @@ body.modal-open {
 }
 
 .container-beneficios-grade {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -682,7 +722,7 @@ body.modal-open {
 
 .container-beneficios-item i {
   margin-right: 20px;
-  color: limegreen;
+  color: var(--buttonColor);
   font-size: 20px;
 }
 
@@ -718,7 +758,7 @@ body.modal-open {
   font-weight: 700;
   text-align: center;
   margin-top: 70px;
-  color: var(--textColor1);
+  color: var(--textColor);
 
   @media (max-width: 800px) {
     font-size: 35px;
@@ -773,15 +813,9 @@ body.modal-open {
   }
 }
 
-.call-to-action-button {
-  text-decoration: none;
-  cursor: pointer;
-  transition: 400ms;
-}
-
 .call-to-action-button:hover {
-  transition: 400ms;
-  background-color: #545043;
+  transition: 500ms;
+  background-color: var(--hoverButtonColor);
 }
 
 .container-call-to-action-div p {
@@ -804,16 +838,18 @@ body.modal-open {
   }
 }
 
-.container-call-to-action-div button {
+.call-to-action-button {
   font-size: 15px;
   width: 380px;
   height: 70px;
   font-weight: 700;
   margin-top: 30px;
-  background-color: var(--spanText);
+  background-color: var(--buttonColor);
   border: none;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 500ms;
 
   @media (max-width: 1005px) {
     font-size: 14px;
@@ -849,15 +885,8 @@ body.modal-open {
   @media (max-width: 800px) {
     width: 90%;
     height: 90%;
-    //max-width: 350px;
-    //max-height: 350px;
     overflow: hidden;
   }
-
-  /*   @media (max-width: 500px) {
-    width: 300px;
-    height: 300px;
-  } */
 }
 
 //--------------------------------------------------
@@ -865,20 +894,6 @@ body.modal-open {
 //--------------------------------------------------
 
 // Experiência Profissional
-
-#container-background-experiencias-profissionais-light,
-#container-background-minhas-competencias-light {
-  font-family: "Montserrat";
-  display: flex;
-  justify-content: center;
-  margin: 90px auto 90px;
-}
-
-#container-conteudo-experiencias-profissionais-light,
-#container-conteudo-minhas-competencias-light {
-  max-width: 1600px;
-  width: 90%;
-}
 
 .container-todas-as-experiencias-profissionais {
   margin-top: 70px;
@@ -898,9 +913,8 @@ body.cada-experiencia-profissional-card-item {
   width: 200px;
   margin: 0 auto;
   padding-block-start: 20px;
-  //text-align: center;
-  //padding: 15px 0px;
   background-color: #f1f1f1;
+  color: var(--textColor);
   font-weight: 600;
 }
 
@@ -918,57 +932,6 @@ body.cada-experiencia-profissional-card-item {
 }
 
 // Modal das Experiências Profissionais
-
-/* .modal-background-experiencia-profissional {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-} */
-
-/* .modal-container-experiencia-profissional {
-  margin: 0;
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  width: 90vw;
-  position: relative;
-  z-index: 1001;
-  overflow-y: auto;
-  max-height: 70vh;
-  max-width: 500px;
-
-  @media (max-width: 800px) {
-    width: 370px;
-  }
-} */
-
-/* .modal-header-experiencia-profissional {
-  display: flex;
-  background-color: #9d957b;
-  height: 50px;
-  width: 90vw;
-  position: fixed;
-  max-width: 500px;
-
-  @media (max-width: 800px) {
-    width: 370px;
-    height: 50px;
-  }
-} */
-/* 
-.modal-close-button-experiencia-profissional {
-  width: 50px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  //borderRadius: "24px"
-} */
 
 .modal-body-experiencia-profissional {
   display: flex;
@@ -1175,12 +1138,12 @@ body.cada-experiencia-profissional-card-item {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: var(--textColor);
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  color: var(--spanText) !important;
+  color: var(--buttonColor) !important;
 
   @media (max-width: 800px) {
     height: 90%;
@@ -1195,7 +1158,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .item-cursos-e-formacoes-periodo-e-tempo-divisoria {
-  background-color: black;
+  background-color: var(--textColor);
   width: 1px;
   height: 10px;
 }
@@ -1286,7 +1249,7 @@ body.cada-experiencia-profissional-card-item {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 3px double var(--spanText);
+  border: 3px double var(--textColor);
 
   @media (max-width: 430px) {
     margin: 0 auto;
@@ -1311,24 +1274,6 @@ body.cada-experiencia-profissional-card-item {
 //
 //
 //
-
-//Minhas Competencias
-
-//Sobre mim
-
-#container-background-minhas-competencias {
-  font-family: "Montserrat";
-  display: flex;
-  justify-content: center;
-  margin: 0px auto;
-  padding: 100px 0px;
-  background-color: var(--primaryLight);
-}
-
-#container-conteudo-minhas-competencias {
-  max-width: 1600px;
-  width: 90%;
-}
 
 .container-minhas-competencias-div {
   margin: 40px auto 0px;
@@ -1372,7 +1317,7 @@ body.cada-experiencia-profissional-card-item {
 .item-minhas-competencias-nivel-barra-On {
   width: 13px;
   height: 13px;
-  background-color: var(--spanText);
+  background-color: var(--buttonColor);
   margin: 0 -0.4px;
   padding: 0;
 }
@@ -1401,18 +1346,6 @@ body.cada-experiencia-profissional-card-item {
 
 // Contactos e Marcações
 
-#container-background-contactos-e-marcacoes-light {
-  font-family: "Montserrat";
-  display: flex;
-  justify-content: center;
-  margin: 90px auto 90px;
-}
-
-#container-conteudo-contactos-e-marcacoes-light {
-  max-width: 1600px;
-  width: 90%;
-}
-
 .container-contactos-e-marcacoes-tudo-div {
   display: flex;
   max-width: 1000px;
@@ -1423,7 +1356,7 @@ body.cada-experiencia-profissional-card-item {
 
 .container-onde-estou-div {
   padding: 20px 0px;
-  background-color: var(--primaryDark);
+  background-color: #b0b0b0;
   width: 90vw;
   max-width: 450px;
   margin: 30px auto 0;
@@ -1449,13 +1382,13 @@ body.cada-experiencia-profissional-card-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
   margin: 0 auto;
   width: 90%;
-  max-width: 250px;
 }
 
 .consultas-online-titulo {
+  background-color: var(--white);
+  padding: 2px 20px;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -1473,9 +1406,9 @@ body.cada-experiencia-profissional-card-item {
   display: flex;
   align-items: center;
   height: 100px;
-  background-color: rgb(163, 145, 75);
-  width: 80vw;
-  max-width: 435px;
+  background-color: var(--buttonColor);
+  width: 100%;
+  //max-width: 435px;
 }
 
 .onde-estou-consultas-imagem {
@@ -1486,7 +1419,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .consultas-online-texto {
-  color: #fff;
+  color: var(--white);
   font-weight: 600;
 
   @media (min-width: 1201px) {
@@ -1511,14 +1444,23 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .onde-estou-consultas-presenciais-div {
+  width: 90%;
   padding-top: 20px;
+  margin: 0 auto;
 }
 
 .consultas-presenciais-titulo-div {
-  background-color: rgb(255, 255, 255);
+  width: 270px;
   margin: 0 auto;
-  width: 90%;
-  max-width: 260px;
+  background-color: var(--white);
+
+  @media (max-width: 800px) {
+    width: 240px;
+  }
+
+  @media (max-width: 500px) {
+    width: 230px;
+  }
 }
 
 .consultas-presenciais-titulo {
@@ -1543,7 +1485,7 @@ body.cada-experiencia-profissional-card-item {
 
 .consultas-presenciais-titulo-card {
   font-size: 20px;
-  color: #fff;
+  color: var(--white);
   font-weight: 600;
 
   @media (min-width: 1201px) {
@@ -1568,7 +1510,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .consultas-presenciais-sub-titulo-1 {
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
 
   @media (min-width: 1201px) {
@@ -1593,7 +1535,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .consultas-presenciais-numero {
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
 
   @media (min-width: 1201px) {
@@ -1618,11 +1560,11 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .consultas-presenciais-sub-titulo-2 {
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
 
   @media (min-width: 1201px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   @media (min-width: 1025px) and (max-width: 1200px) {
@@ -1668,27 +1610,24 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .consultas-presenciais-info-div {
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 100px;
-  background-color: rgb(163, 145, 75);
-  width: 80vw;
-  max-width: 435px;
-  margin: 0 auto;
+  background-color: var(--buttonColor);
 }
 
 .onde-estou-ultimo-card {
   height: 50px;
-  background-color: #fff;
+  background-color: var(--white);
   margin: 20px auto 0px;
-  width: 80vw;
+  width: 90%;
   max-width: 435px;
 }
 
 .ultimo-card-texto {
   text-align: center;
   padding-top: 15px;
-  color: var(--primaryDark);
+  color: var(--textColor);
 
   @media (min-width: 1201px) {
     font-size: 20px;
@@ -1711,13 +1650,12 @@ body.cada-experiencia-profissional-card-item {
   }
 }
 
-//
-//
-//
-//
+// -----------------------------------------------------------
+
+// Meus Contactos
 
 .meus-contactos-div {
-  background-color: var(--primaryDark);
+  background-color: #b0b0b0;
   padding: 20px 0px;
   width: 90vw;
   max-width: 450px;
@@ -1727,7 +1665,7 @@ body.cada-experiencia-profissional-card-item {
 .meus-contactos-titulo {
   font-size: 30px;
   font-weight: bold;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   margin-bottom: 25px;
 
@@ -1750,7 +1688,6 @@ body.cada-experiencia-profissional-card-item {
 
 #rede-social-link-icone {
   font-size: 100%;
-  //color: rgb(255, 0, 0);
 }
 
 .rede-social-link-div i {
@@ -1758,7 +1695,7 @@ body.cada-experiencia-profissional-card-item {
   width: auto;
   height: auto;
   line-height: 1;
-  color: var(--spanText);
+  color: var(--buttonColor);
 
   @media (max-width: 800px) {
     font-size: 30px;
@@ -1774,22 +1711,22 @@ body.cada-experiencia-profissional-card-item {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  background-color: #fff;
+  background-color: var(--white);
   justify-content: space-between;
   width: 78%;
   max-width: 435px;
   height: 50px;
   padding: 0 20px;
-  transition: 600ms;
+  transition: 500ms;
 }
 
 .rede-social-link-div:hover {
-  background-color: #acacac;
-  transition: 600ms;
+  background-color: var(--hoverButtonColor);
+  transition: 500ms;
 }
 
 .rede-social-texto {
-  color: black;
+  color: var(--textColor);
   font-size: 18px;
   font-weight: 600;
   margin: 0px 30px 0 20px;
@@ -1803,10 +1740,7 @@ body.cada-experiencia-profissional-card-item {
   }
 }
 
-//
-//
-//
-//
+// -----------------------------------------------------------
 
 // Secção de FAQ
 
@@ -1831,10 +1765,6 @@ body.cada-experiencia-profissional-card-item {
   margin: 50px 0;
   box-sizing: border-box;
 }
-/* 
-.item-FAQ-seccao-p{
-  //background-color: yellow;
-} */
 
 .container-FAQ-mais-perguntas-div {
   margin-top: 50px;
@@ -1842,19 +1772,8 @@ body.cada-experiencia-profissional-card-item {
   justify-content: center;
 }
 
-/* .item-FAQ-div-temp {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-  justify-content: center;
-  max-width: 900px;
-  width: 100%;
-  background-color: cyan;
-} */
-
 .item-FAQ-seccao-button {
-  background-color: white;
+  background-color: var(--white);
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -1864,8 +1783,6 @@ body.cada-experiencia-profissional-card-item {
   gap: 20px;
   border: none;
   line-height: 150%;
-  //outline: none;
-  //transition: 0.4s;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1873,9 +1790,7 @@ body.cada-experiencia-profissional-card-item {
   margin: 30px 0 0;
   height: 90px;
   text-align: justify;
-  //width: 90%;
-  //max-width: 435px;
-  transition: 600ms;
+  transition: 500ms;
 
   @media (max-width: 800px) {
     font-size: 16px;
@@ -1891,12 +1806,12 @@ body.cada-experiencia-profissional-card-item {
 }
 
 .item-FAQ-seccao-button:hover {
-  transition: 600ms;
+  transition: 500ms;
 }
 
 .conteudo {
   display: none;
-  transition: 600ms;
+  transition: 500ms;
 }
 
 .conteudo-mostrado {
@@ -1905,9 +1820,9 @@ body.cada-experiencia-profissional-card-item {
   height: auto;
   letter-spacing: 0.3px;
   text-align: justify;
-  background-color: #fff6ec;
+  background-color: #f8f8f8;
   padding: 5% 40px;
-  transition: 600ms;
+  transition: 500ms;
 
   @media (max-width: 800px) {
     font-size: 15px;
@@ -1922,20 +1837,20 @@ body.cada-experiencia-profissional-card-item {
 
 .item-FAQ-seccao-button[aria-expanded="true"] .fa-chevron-down {
   transform: rotate(180deg);
-  transition: 600ms;
+  transition: 500ms;
 }
 
 .item-FAQ-seccao-button[aria-expanded="false"] .fa-chevron-down {
-  transition: 600ms;
+  transition: 500ms;
 }
 
 .container-FAQ-mais-perguntas-pergunta {
   text-align: center;
   font-size: 20px;
   width: 90%;
+  color: var(--textColor);
 }
 
 .container-FAQ-mais-perguntas-pergunta a {
-  color: blue;
-  font-weight: bold;
+  font-weight: 700;
 }
