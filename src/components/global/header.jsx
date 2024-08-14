@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuHamburger from "../../assets/icon_menu_hamburger";
 import XIconSvg from "../../assets/icon_X";
 import { Link } from "react-scroll";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo1.png";
 
 export default function Header() {
   let headerHeight;
@@ -123,7 +123,7 @@ export default function Header() {
               width={35}
               height={20}
               strokeWidth={3}
-              strokeColor="#292929"
+              strokeColor="#9D957B"
             />
           </button>
           <Link
@@ -141,7 +141,7 @@ export default function Header() {
           className={`header-mobile-side-bar ${isActive ? "is-active" : ""}`}
         >
           <button className="header-mobile-icon-X" onClick={handleClick}>
-            <XIconSvg size={30} strokeWidth={3} color="#292929" />
+            <XIconSvg size={30} strokeWidth={3} color="#9D957B" />
           </button>
 
           <nav>
