@@ -958,7 +958,6 @@ body.cada-experiencia-profissional-card-item {
   object-fit: cover;
   float: left;
   margin-left: 25px;
-  overflow-x: hidden;
 }
 
 .modal-experiencia-profissional-div-info {
@@ -1073,6 +1072,7 @@ body.cada-experiencia-profissional-card-item {
   width: 75px;
   height: 75px;
   margin-right: 20px;
+  object-fit: cover;
 }
 
 .item-ensino-superior-curso,
