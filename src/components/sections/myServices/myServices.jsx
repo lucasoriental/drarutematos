@@ -94,7 +94,7 @@ export default function MyServices() {
       id: 1,
       img: terapiaIndividual,
       servico: "Terapia Individual",
-      info: 'As consultas individuais são baseadas no <a href="https://www.saudebemestar.pt/pt/blog/psicologia/terapia-cognitivo-comportamental/" target="_blank">modelo cognitivo-comportamental</a> de 2ª e 3ª geração, reconhecido pela sua <strong>eficácia e adaptação às necessidades dos clientes.</strong></br> Este tipo de intervenção foca-se na <strong>compreensão dos pensamentos</strong> que podem estar a contribuir para as dificuldades emocionais e comportamentais que enfrenta. Através de um <strong>processo colaborativo</strong>, trabalhamos juntos para identificar padrões de pensamento disfuncionais e desenvolver estratégias práticas para promover mudanças positivas.</br></br><strong>O que esperar das consultas individuais:</strong></br></br> <ul><li><strong>Avaliação inicial</strong>: Uma avaliação abrangente para compreender os seus desafios específicos e estabelecer objetivos terapêuticos claros;</li><li> <strong>Intervenção personalizada:</strong> Desenvolvimento de um plano de tratamento adaptado às suas necessidades individuais, utilizando técnicas comprovadas da terapia cognitivo-comportamental;</li><li> <strong>Apoio contínuo:</strong> Sessões regulares para explorar e modificar padrões de pensamento negativos, aprender habilidades de enfrentamento eficazes e alcançar os objetivos terapêuticos definidos.</li></ul></br> <strong>Áreas de Intervenção:</strong></br> As consultas de psicologia destinam-se à <strong>prevenção e tratamento da doença mental</strong>, abrangendo todas as faixas etárias, desde crianças até idosos. Especificamente, a intervenção pode incidir em: </br></br><ul><li>Stress e Ansiedade;</li><li> Depressão ou outras perturbações de humor;</li><li> Ansiedade e Medos;</li><li> Perturbações Alimentares;</li><li> Problemas de comportamento;</li><li> Hiperatividade e Défice de Atenção;</li><li> Lidar com doenças crónicas;</li><li> Problemas de sono;</li><li> Perda e Luto;</li><li> Stress pós-traumático;</li><li> Lidar com dificuldades do dia-a-dia (escolares, sociais, amorosas, laborais, familiares);</li><li> Enurese e encoprese;</li><li> Entre outras problemáticas.</li></ul> </br><strong>Benefícios das Consultas:</strong></br> Com as consultas individuais, visa-se promover e manter a saúde mental e física, prevenir psicopatologias e reduzir situações de risco. Os clientes têm a oportunidade de aprender a gerir estados de ansiedade, superar fobias, tomar decisões conscientes em momentos de transição e lidar com emoções desagradáveis, entre outros desafios do dia-a-dia. </br></br><strong>Horários e Disponibilidade:</strong></br> O serviço de psicologia está disponível de segunda a sábado de manhã, mediante marcação prévia. Estou comprometida em oferecer um espaço seguro e confidencial, onde juntos podemos explorar e superar as suas dificuldades, promovendo o seu bem-estar emocional e melhor qualidade de vida. </br></br><strong>Honorário:</strong></br> O valor das consultas individuais varia entre 22€ a 40€.',
+      info: 'As consultas individuais são baseadas no <a href="#container-background-FAQ-dark">modelo cognitivo-comportamental</a> de 2ª e 3ª geração, reconhecido pela sua <strong>eficácia e adaptação às necessidades dos clientes.</strong></br> Este tipo de intervenção foca-se na <strong>compreensão dos pensamentos</strong> que podem estar a contribuir para as dificuldades emocionais e comportamentais que enfrenta. Através de um <strong>processo colaborativo</strong>, trabalhamos juntos para identificar padrões de pensamento disfuncionais e desenvolver estratégias práticas para promover mudanças positivas.</br></br><strong>O que esperar das consultas individuais:</strong></br></br> <ul><li><strong>Avaliação inicial</strong>: Uma avaliação abrangente para compreender os seus desafios específicos e estabelecer objetivos terapêuticos claros;</li><li> <strong>Intervenção personalizada:</strong> Desenvolvimento de um plano de tratamento adaptado às suas necessidades individuais, utilizando técnicas comprovadas da terapia cognitivo-comportamental;</li><li> <strong>Apoio contínuo:</strong> Sessões regulares para explorar e modificar padrões de pensamento negativos, aprender habilidades de enfrentamento eficazes e alcançar os objetivos terapêuticos definidos.</li></ul></br> <strong>Áreas de Intervenção:</strong></br> As consultas de psicologia destinam-se à <strong>prevenção e tratamento da doença mental</strong>, abrangendo todas as faixas etárias, desde crianças até idosos. Especificamente, a intervenção pode incidir em: </br></br><ul><li>Stress e Ansiedade;</li><li> Depressão ou outras perturbações de humor;</li><li> Ansiedade e Medos;</li><li> Perturbações Alimentares;</li><li> Problemas de comportamento;</li><li> Hiperatividade e Défice de Atenção;</li><li> Lidar com doenças crónicas;</li><li> Problemas de sono;</li><li> Perda e Luto;</li><li> Stress pós-traumático;</li><li> Lidar com dificuldades do dia-a-dia (escolares, sociais, amorosas, laborais, familiares);</li><li> Enurese e encoprese;</li><li> Entre outras problemáticas.</li></ul> </br><strong>Benefícios das Consultas:</strong></br> Com as consultas individuais, visa-se promover e manter a saúde mental e física, prevenir psicopatologias e reduzir situações de risco. Os clientes têm a oportunidade de aprender a gerir estados de ansiedade, superar fobias, tomar decisões conscientes em momentos de transição e lidar com emoções desagradáveis, entre outros desafios do dia-a-dia. </br></br><strong>Horários e Disponibilidade:</strong></br> O serviço de psicologia está disponível de segunda a sábado de manhã, mediante marcação prévia. Estou comprometida em oferecer um espaço seguro e confidencial, onde juntos podemos explorar e superar as suas dificuldades, promovendo o seu bem-estar emocional e melhor qualidade de vida. </br></br><strong>Honorário:</strong></br> O valor das consultas individuais varia entre 22€ a 40€.',
     },
     {
       id: 2,
@@ -194,23 +194,24 @@ export default function MyServices() {
             </div>
           </div>
         </div>
-        <div className="container-beneficios-div">
-          <div className="titulo-subseccao-icone-e-texto-div">
-            <BeneficiosSVG size="33" color="black" />
-            <p className="container-titulo-subseccao">
-              Benefícios das Consultas:
-            </p>
-          </div>
-          <div className="container-beneficios-grade">
-            {arrBeneficios.map((item) => {
-              return (
-                <div className="container-beneficios-item" key={item.id}>
-                  {/* <img src={lotusIcon} alt="icone" /> */}
-                  <i className="fa-solid fa-check"></i>
-                  <p>{item.beneficio}</p>
-                </div>
-              );
-            })}
+        <div className="container-beneficios-background-div">
+          <div className="container-beneficios-div">
+            <div className="titulo-subseccao-icone-e-texto-div">
+              <BeneficiosSVG size="33" color="black" />
+              <p className="container-titulo-subseccao">
+                Benefícios das Consultas:
+              </p>
+            </div>
+            <div className="container-beneficios-grade">
+              {arrBeneficios.map((item) => {
+                return (
+                  <div className="container-beneficios-item" key={item.id}>
+                    <i className="fa-solid fa-dove"></i>
+                    <p>{item.beneficio}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
         <div className="container-alguma-duvida-div">
@@ -248,7 +249,9 @@ export default function MyServices() {
               offset={-headerHeight}
               duration={1000}
             >
-              <button className="call-to-action-button">Agende a sua consulta</button>
+              <button className="call-to-action-button">
+                Agende a sua consulta
+              </button>
             </Link>
           </div>
           <img src={callToActionImg} alt="" />
