@@ -22,6 +22,10 @@ import refEAsilo from "../../assets/certificados/Certificado Intervenção Psico
 import emCarreira from "../../assets/certificados/Certificado Workshops EmCarreira.pdf";
 import direitosHumanos from "../../assets/certificados/Certificado Ciclo de Workshops de Direitos Humanos.pdf";
 import webnar from "../../assets/certificados/Certificado_ participação teachmi.pdf";
+import cucubebe from "../../assets/certificados/Certificado_Cucu Bebe.pdf";
+import psicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
+import regCorp from "../../assets/certificados/Certificado_Corpo, Regulação Emocional e Relação Terapêutica.pdf";
+import tecPsicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
 
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -189,8 +193,9 @@ export default function FormacaoAcademia() {
       curso:
         'Participação no Seminário Internacional de Psicologia do Bebé "Cucu, Bebé!"',
       instituicao: "Babylab da Universidade de Coimbra",
-      periodo: "12/2019 - 12/2019",
-      tempo: "X",
+      periodo: "",
+      tempo: "",
+      cert: cucubebe
     },
     {
       id: 15,
@@ -198,7 +203,8 @@ export default function FormacaoAcademia() {
       curso: "Simpósio Saúde Emocional",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
-      tempo: "X",
+      tempo: "3,5",
+      cert: psicCorp
     },
     {
       id: 16,
@@ -207,7 +213,8 @@ export default function FormacaoAcademia() {
         "Participação no Workshop Corpo, Regulação Emocional e Relação Terapêutica",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
-      tempo: "X",
+      tempo: "2",
+      cert: regCorp
     },
     {
       id: 17,
@@ -215,7 +222,8 @@ export default function FormacaoAcademia() {
       curso: "Participação no Workshop de Técnicas de Psicoterapia Corporal",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
-      tempo: "X",
+      tempo: "2",
+      cert: tecPsicCorp
     },
     {
       id: 18,
