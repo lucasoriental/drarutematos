@@ -50,21 +50,21 @@ export default function mainPage() {
           className="container-main-link-rede-social"
           target="_blank"
         >
-          <FacebookSvg color="#9D957B" size="40" />
+          <FacebookSvg color="#c3ba9f" size="40" />
         </a>
         <a
           href="https://instagram.com/rutematos_psicologa"
           className="container-main-link-rede-social"
           target="_blank"
         >
-          <InstagramSvg color="#9D957B" size="40" />
+          <InstagramSvg color="#c3ba9f" size="40" />
         </a>
         <a
           href="https://www.linkedin.com/in/rutematos/"
           className="container-main-link-rede-social"
           target="_blank"
         >
-          <LinkedinSvg color="#9D957B" size="40" />
+          <LinkedinSvg color="#c3ba9f" size="40" />
         </a>
       </nav>
     </div>
