@@ -10,8 +10,6 @@ import ContactosEMarcacoes from "./components/sections/contacts";
 import FAQ from "./components/sections/faq";
 
 function App() {
-  alert("Este projeto ainda está em andamento! Atualizações/Melhorias serão feitas ao longo do tempo, obrigado pela compreensão!")
-
   return (
     <>
       <Header />
