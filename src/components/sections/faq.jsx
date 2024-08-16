@@ -161,7 +161,7 @@ export default function FAQ() {
           pergunta:
             "5. O que posso fazer se estiver em crise ou precisar de ajuda imediata?",
           resposta:
-            "Se estiver em crise, pode ligar para os serviços de emergência ou para linhas de apoio emocional como a Linha SOS Voz Amiga (21 354 45 45). Entre em contacto comigo o mais rápido possível para agendar uma sessão de emergência.",
+            "Se estiver em crise, pode ligar para os serviços de emergência ou para linhas de apoio emocional como a Linha SNS 24 (808 24 24 24) ou Linha SOS Voz Amiga (21 354 45 45). Entre em contacto comigo o mais rápido possível para agendar uma consulta.",
         },
       ],
     },
@@ -179,7 +179,7 @@ export default function FAQ() {
           pergunta:
             "2. Como saber se o meu problema é sério o suficiente para procurar terapia?",
           resposta:
-            "Se os seus sintomas estão a interferir na sua vida diária, relacionamentos ou trabalho, é uma boa ideia procurar ajuda. Mesmo problemas que parecem menores podem beneficiar de intervenção precoce.",
+            "Se os seus sintomas estão a interferir na sua vida diária, relações ou trabalho, ou causam sofrimento significativo, é uma boa ideia procurar ajuda. Mesmo problemas que parecem menores podem beneficiar de intervenção precoce.",
         },
         {
           pergunta:
@@ -196,7 +196,7 @@ export default function FAQ() {
         {
           pergunta: "5. Como funciona a terapia para crianças e adolescentes?",
           resposta:
-            "A terapia para crianças e adolescentes é adaptada à idade e às necessidades deles. Pode envolver brincadeira terapêutica, terapia cognitivo-comportamental, e trabalho com a família para apoiar o jovem no seu ambiente.",
+            "A terapia para crianças e adolescentes é adaptada à idade e às necessidades deles. Pode envolver jogos, histórias, mais exemplos, e trabalho com a família para apoiar o jovem no seu ambiente.",
         },
       ],
     },
@@ -223,8 +223,7 @@ export default function FAQ() {
       <div id="container-conteudo-FAQ-dark">
         <p className="container-titulo-da-seccao">Perguntas Mais Frequentes</p>
         <p className="container-sub-titulo-da-seccao">
-          Nesta secção você encontrará informações sobre as perguntas mais
-          frequentes feitas a mim.
+          Nesta secção encontrará informações sobre as perguntas mais frequentes acerca das consultas de psicologia.
         </p>
         <div className="container-FAQ-grade">
           {arrFAQ.map((secao) => (
@@ -246,7 +245,7 @@ export default function FAQ() {
                   <div
                     className={
                       selecionado.secaoId === secao.id &&
-                        selecionado.perguntaId === perguntaIndex
+                      selecionado.perguntaId === perguntaIndex
                         ? "conteudo-mostrado"
                         : "conteudo"
                     }
@@ -259,8 +258,14 @@ export default function FAQ() {
         </div>
         <div className="container-FAQ-mais-perguntas-div">
           <p className="container-FAQ-mais-perguntas-pergunta">
-            Sua dúvida não está entre as mais perguntadas? Envia-me a sua dúvida
-            para que possa ajudar: <a style={{ textDecoration: "none", color: "black" }} href="mailto:ruteimatos@gmail.com">ruteimatos@gmail.com</a>
+            A sua dúvida não está entre as mais perguntadas? Envie-me a sua dúvida
+            para que possa ajudar:{" "}
+            <a
+              style={{ textDecoration: "none", color: "#9d957b" }}
+              href="mailto:ruteimatos@gmail.com"
+            >
+              ruteimatos@gmail.com
+            </a>
           </p>
         </div>
       </div>
