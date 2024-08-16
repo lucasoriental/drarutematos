@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import univCoimbra from "../../assets/images/formacao_academica/universidade_de_coimbra.webp";
 import opp from "../../assets/images/formacao_academica/ordem_dos_psicologos_portugueses.webp";
 import instPPC from "../../assets/images/formacao_academica/instituto_portugues_de_psicoterapia_corporal.webp";
+import mindTheMind from "../../assets/images/formacao_academica/mindTheMindLogo.jpeg";
+import cineicc from "../../assets/images/formacao_academica/CINEICC.jpeg";
 
 import AwardSVG from "../../assets/svgs/award.jsx";
 import BookSVG from "../../assets/svgs/book.jsx";
@@ -21,11 +23,12 @@ import psicLSGBT from "../../assets/certificados/Certificado Intervenção Psico
 import refEAsilo from "../../assets/certificados/Certificado Intervenção Psicológica com Pessoas Refugiadas e Requerentes de Asilo.pdf";
 import emCarreira from "../../assets/certificados/Certificado Workshops EmCarreira.pdf";
 import direitosHumanos from "../../assets/certificados/Certificado Ciclo de Workshops de Direitos Humanos.pdf";
-import webnar from "../../assets/certificados/Certificado_ participação teachmi.pdf";
 import cucubebe from "../../assets/certificados/Certificado_Cucu Bebe.pdf";
 import psicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
 import regCorp from "../../assets/certificados/Certificado_Corpo, Regulação Emocional e Relação Terapêutica.pdf";
 import tecPsicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
+import mindTheMindCert from "../../assets/certificados/Certificado Mind the mind (formaçao).pdf";
+import cineiccCert from "../../assets/certificados/Certificado_Congresso CINEICC.pdf";
 
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -170,6 +173,16 @@ export default function FormacaoAcademia() {
     },
     {
       id: 12,
+      imagem: cineicc,
+      curso: "IV International Congress CINEICC",
+      instituicao:
+        "Centro de Investigação em Neuropsicologia e Intervenção Cognitivo-Comportamental",
+      periodo: "03/2023 - 04/2023",
+      tempo: "10",
+      cert: cineiccCert,
+    },
+    {
+      id: 13,
       imagem: univCoimbra,
       curso: "Participação no Ciclo de Workshops de Direitos Humanos",
       instituicao: "Amnistia internacional da Universidade de Coimbra",
@@ -178,55 +191,55 @@ export default function FormacaoAcademia() {
       cert: direitosHumanos,
     },
     {
-      id: 13,
-      imagem: univCoimbra,
-      curso: 'Participação no Webinar "Infoday do Projeto TEACHmi"',
-      instituicao:
-        "Observatório de Cidadania e Intervenção Social da Faculdade de Psicologia e Ciências da Educação da Universidade de Coimbra",
-      periodo: "01/2020 - 01/2020",
-      tempo: "1",
-      cert: webnar,
+      id: 14,
+      imagem: mindTheMind,
+      curso:
+        "“Mind the Mind - to Combat the Stigma of Mental Disorders (Formação)",
+      instituicao: "Mind The Mind",
+      periodo: "2020",
+      tempo: "2",
+      cert: mindTheMindCert,
     },
     {
-      id: 14,
+      id: 15,
       imagem: univCoimbra,
       curso:
         'Participação no Seminário Internacional de Psicologia do Bebé "Cucu, Bebé!"',
       instituicao: "Babylab da Universidade de Coimbra",
       periodo: "",
       tempo: "",
-      cert: cucubebe
+      cert: cucubebe,
     },
     {
-      id: 15,
+      id: 16,
       imagem: instPPC,
       curso: "Simpósio Saúde Emocional",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
       tempo: "3,5",
-      cert: psicCorp
+      cert: psicCorp,
     },
     {
-      id: 16,
+      id: 17,
       imagem: instPPC,
       curso:
         "Participação no Workshop Corpo, Regulação Emocional e Relação Terapêutica",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
       tempo: "2",
-      cert: regCorp
+      cert: regCorp,
     },
     {
-      id: 17,
+      id: 18,
       imagem: instPPC,
       curso: "Participação no Workshop de Técnicas de Psicoterapia Corporal",
       instituicao: "Instituto Português de Psicoterapia Corporal",
       periodo: "11/2019 - 11/2019",
       tempo: "2",
-      cert: tecPsicCorp
+      cert: tecPsicCorp,
     },
     {
-      id: 18,
+      id: 19,
       imagem: univCoimbra,
       curso: "Participação no Treino da Mente Compassiva",
       instituicao:
