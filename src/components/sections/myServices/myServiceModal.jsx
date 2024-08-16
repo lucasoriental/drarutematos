@@ -7,13 +7,19 @@ export default function MyServiceModal({ setOpenModal, service }) {
 
     const handleLinkClick = (event) => {
       if (event.target.tagName === "A") {
-        event.preventDefault();
-        setOpenModal(false);
+        const href = event.target.getAttribute("href");
 
-        const targetId = event.target.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
+        const isExternal = href.startsWith("http") || href.startsWith("https");
+
+        if (!isExternal && href.startsWith("#")) {
+          event.preventDefault();
+          setOpenModal(false);
+
+          const targetId = href.substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: "smooth" });
+          }
         }
       }
     };
