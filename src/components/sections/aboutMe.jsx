@@ -12,7 +12,34 @@ export default function SobreMim() {
             className="container-sobre-mim-imagem"
           />
           <p className="container-sobre-mim-texto">
-            Sou <strong>Mestre</strong> em Intervenções <strong>Cognitivo-Comportamentais</strong> em <strong>Psicologia Clínica</strong> e da <strong>Saúde</strong>, formada na Faculdade de Psicologia e Ciências da Educação da <strong>Universidade de Coimbra</strong>. Após concluir o meu estágio curricular no Centro de Saúde de Condeixa-a-Nova e realizar diversas experiências de voluntariado, atualmente estou a desenvolver o meu Ano Profissional Júnior na Clínica do Paião. <br /> Desde cedo, a psicologia clínica tornou-se a minha verdadeira paixão. Ajudar os outros a superar desafios e promover o seu bem-estar é profundamente gratificante para mim. No meu trabalho, aplico o modelo cognitivo-comportamental de 2ª e 3ª geração, conhecido pela sua eficácia em tratar uma ampla gama de questões, incluindo ansiedade, depressão, stress e dificuldades comportamentais. <br /> Os meus colegas consideram-me uma pessoa organizada, focada e dedicada. No meu tempo livre, gosto de praticar hipismo, ver filmes, ler, socializar com amigos e jogar. <br /> Estou disponível para apoiar quem procura melhorar a sua saúde mental e enfrentar desafios da vida. Sinta-se à vontade para me contactar para marcar uma consulta ou explorar oportunidades de colaboração.
+            Sou Mestre em <span>Intervenções</span>{" "}
+            <span>Cognitivo-Comportamentais</span> em{" "}
+            <span>Psicologia Clínica</span> e da <span>Saúde</span>, formada na
+            Faculdade de Psicologia e Ciências da Educação da{" "}
+            <span>Universidade de Coimbra</span>. Após concluir o meu estágio
+            curricular no Centro de Saúde de Condeixa-a-Nova e realizar diversas
+            experiências de voluntariado, atualmente estou a desenvolver o meu
+            Ano Profissional Júnior na <span>Clínica do Paião</span>. <br />{" "}
+            Desde cedo, a psicologia clínica tornou-se a minha{" "}
+            <span>verdadeira paixão</span>. Ajudar os outros a superar desafios
+            e promover o seu bem-estar é profundamente{" "}
+            <span>gratificante para mim</span>. No meu trabalho, aplico o modelo
+            cognitivo-comportamental de 2ª e 3ª geração, conhecido pela sua{" "}
+            <span>eficácia</span> em tratar uma ampla gama de questões,
+            incluindo{" "}
+            <span>
+              ansiedade, depressão, stress e dificuldades comportamentais
+            </span>
+            . <br /> Os meus colegas consideram-me uma pessoa{" "}
+            <span>organizada, focada e dedicada</span>. No meu tempo livre,
+            gosto de praticar hipismo, ver filmes, ler, socializar com amigos e
+            jogar. <br /> Estou disponível para apoiar quem procura{" "}
+            <span>
+              melhorar a sua saúde mental e enfrentar desafios da vida
+            </span>
+            . Sinta-se à vontade para me contactar para{" "}
+            <span>marcar uma consulta</span> ou explorar oportunidades de
+            colaboração.
           </p>
         </div>
       </div>
