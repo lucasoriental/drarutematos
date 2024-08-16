@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import clinicadopaiao from "../../../assets/images/experiencias_profissionais/clinica_do_paiao.webp";
 import condeixa from "../../../assets/images/experiencias_profissionais/centro_de_saude_condeixa_a_nova.webp";
-import lavosPet from "../../../assets/images/experiencias_profissionais/lavos_pet.webp";
 import casa from "../../../assets/images/experiencias_profissionais/CASA.webp";
 import psike from "../../../assets/images/experiencias_profissionais/psike.webp";
 import mentalschool from "../../../assets/images/experiencias_profissionais/mental_school.webp";
@@ -38,15 +37,6 @@ export default function ExperienciaProfissional() {
     },
     {
       id: 3,
-      imagem: lavosPet,
-      titulo: "Part-time",
-      empresa: "LavosPet - Figueira da Foz",
-      responsabilidades:
-        "Atendimento ao cliente, organização e manutenção dos artigos da loja, manutenção dos animais e auxílio em banhos e tosquias de cães.",
-      tempo: "07/22 - 08/23",
-    },
-    {
-      id: 4,
       imagem: casa,
       titulo: "Estágio de Verão",
       empresa: "CASA (Centro de Apoio ao Sem Abrigo) - Figueira da Foz",
@@ -55,7 +45,7 @@ export default function ExperienciaProfissional() {
       tempo: "07/2021",
     },
     {
-      id: 5,
+      id: 4,
       imagem: mentalschool,
       titulo: "Estágio de Verão",
       empresa: "Mental School - Figueira da Foz",
@@ -64,7 +54,7 @@ export default function ExperienciaProfissional() {
       tempo: "07/20 - 08/20",
     },
     {
-      id: 6,
+      id: 5,
       imagem: psike,
       titulo: "Estágio de Verão",
       empresa: "Psike - Figueira da Foz",
