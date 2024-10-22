@@ -19,7 +19,7 @@ export default function mainPage() {
       <div>
         <img src={fotoDePerfil} alt="Foto de Perfil" />
         <p className="container-main-cedula">
-          Cédula Profissional: <span>132557</span>
+          Cédula Profissional: <span>29977</span>
         </p>
       </div>
       <div className="container-main-texts">
