@@ -12,14 +12,16 @@ export default function SobreMim() {
             className="container-sobre-mim-imagem"
           />
           <p className="container-sobre-mim-texto">
-            Sou Mestre em <span>Intervenções</span>{" "}
-            <span>Cognitivo-Comportamentais</span> em{" "}
-            <span>Psicologia Clínica</span> e da <span>Saúde</span>, formada na
-            Faculdade de Psicologia e Ciências da Educação da{" "}
-            <span>Universidade de Coimbra</span>. Após concluir o meu estágio
-            curricular no Centro de Saúde de Condeixa-a-Nova e realizar diversas
-            experiências de voluntariado, atualmente estou a desenvolver o meu
-            Ano Profissional Júnior na <span>Clínica do Paião</span>. <br />{" "}
+            Sou Mestre em <span>Intervenções Cognitivo-Comportamentais</span> em <span>Psicologia
+            Clínica e da Saúde</span>, formada na Faculdade de Psicologia e Ciências da
+            Educação da <span>Universidade de Coimbra</span>. No âmbito da minha prática
+            profissional, tive a oportunidade de realizar o meu estágio
+            curricular no Centro de Saúde de Condeixa-a-Nova e o meu Ano
+            Profissional Júnior na <span>Clínica do Paião</span>, onde atualmente continuo a
+            desenvolver a minha atividade. Além disso, colaboro no <span>Centro de
+            Apoio ao Sem Abrigo</span> da Figueira da Foz, acompanhando pessoas de
+            todas as idades, e no <span>Centro Social Paroquial do Paião</span>, onde
+            concentro a minha intervenção no apoio à população idosa. <br />{" "}
             Desde cedo, a psicologia clínica tornou-se a minha{" "}
             <span>verdadeira paixão</span>. Ajudar os outros a superar desafios
             e promover o seu bem-estar é profundamente{" "}
