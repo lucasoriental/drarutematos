@@ -4,6 +4,7 @@ import condeixa from "../../../assets/images/experiencias_profissionais/centro_d
 import casa from "../../../assets/images/experiencias_profissionais/CASA.webp";
 import psike from "../../../assets/images/experiencias_profissionais/psike.webp";
 import mentalschool from "../../../assets/images/experiencias_profissionais/mental_school.webp";
+import centroSocial from "../../../assets/images/experiencias_profissionais/centro_social_paroquial_do_paiao.webp"
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import ProfessionalExperiencesModal from "./professionalExperiencesModal";
 
@@ -18,12 +19,21 @@ import "swiper/css/scrollbar";
 export default function ExperienciaProfissional() {
   let profExp = [
     {
+      id: 0,
+      imagem: centroSocial,
+      titulo: "Psicóloga Clínica e da Saúde",
+      empresa: "Centro Social Paroquial do Paião",
+      responsabilidades:
+        "Realização de atividades em grupo; avaliações psicossociais; apoio psicológico individual; treino cognitivo; promoção do bem-estar e da qualidade de vida da população idosa.",
+      tempo: "10/24 - Presente",
+    },
+    {
       id: 1,
       imagem: clinicadopaiao,
-      titulo: "Psicóloga Júnior",
+      titulo: "Psicóloga Clínica e da Saúde",
       empresa: "Clínica do Paião",
       responsabilidades:
-        "Acompanhamento de consultas; avaliação e intervenção cognitivo-comportamental e de 3ª geração; realização de workshops sobre saúde mental e bem-estar; atendimento ao cliente; design e marketing.",
+        "Acompanhamento de consultas; avaliação e intervenção cognitivo-comportamental e de 3ª geração; e realização de workshops sobre saúde mental e bem-estar. Anteriormente, até agosto de 2024, também auxiliei em atendimento ao cliente, design e marketing.",
       tempo: "10/23 - Presente",
     },
     {
