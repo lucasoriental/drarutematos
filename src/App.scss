@@ -1017,6 +1017,14 @@ body.cada-experiencia-profissional-card-item {
 .modal-experiencia-profissional-responsabilidades {
   text-align: justify;
   margin-top: 5px;
+
+  ul{
+    margin-left: 16px;
+  }
+
+  span{
+    font-weight: 600;
+  }
 }
 
 //--------------------------------------------------
@@ -1858,4 +1866,10 @@ body.cada-experiencia-profissional-card-item {
 
 .container-FAQ-mais-perguntas-pergunta a {
   font-weight: 700;
+}
+
+
+.sub-sec-2{
+  margin-top: 5px;
+  font-weight: 600;
 }

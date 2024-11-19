@@ -13,10 +13,7 @@ export default function ProfessionalExperiencesModal({ item, onClose }) {
     <div className="modal-background">
       <div className="modal-container">
         <div className="modal-header">
-          <button
-            className="modal-close-button"
-            onClick={onClose}
-          >
+          <button className="modal-close-button" onClick={onClose}>
             <XIconSvg size={25} strokeWidth={3} color="white" />
           </button>
         </div>
@@ -44,9 +41,10 @@ export default function ProfessionalExperiencesModal({ item, onClose }) {
             <p className="modal-experiencia-profissional-responsabilidades-titulo">
               Responsabilidades:
             </p>
-            <p className="modal-experiencia-profissional-responsabilidades">
-              {item.responsabilidades}
-            </p>
+            <div
+              className="modal-experiencia-profissional-responsabilidades"
+              dangerouslySetInnerHTML={{ __html: item.responsabilidades }}
+            />
           </div>
         </div>
       </div>
