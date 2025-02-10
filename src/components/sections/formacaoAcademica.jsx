@@ -24,13 +24,13 @@ import refEAsilo from "../../assets/certificados/Certificado Intervenção Psico
 import emCarreira from "../../assets/certificados/Certificado Workshops EmCarreira.pdf";
 import direitosHumanos from "../../assets/certificados/Certificado Ciclo de Workshops de Direitos Humanos.pdf";
 import cucubebe from "../../assets/certificados/Certificado_Cucu Bebe.pdf";
-import psicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
+import psicCorp from "../../assets/certificados/Certificado_Simpósio Saúde Emocional.pdf";
 import regCorp from "../../assets/certificados/Certificado_Corpo, Regulação Emocional e Relação Terapêutica.pdf";
 import tecPsicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
 import mindTheMindCert from "../../assets/certificados/Certificado Mind the mind (formaçao).pdf";
 import cineiccCert from "../../assets/certificados/Certificado_Congresso CINEICC.pdf";
 import relaxParaAdultosEIdosos from "../../assets/certificados/certificado_tecnicas_de_relaxamento_para_adultos_e_idosos.pdf";
-import servicosMediadosPorTecnologias from "../../assets/certificados/certificado_prestacao_de_servicos_de_psicologia_mediados_por_ti.pdf"
+import servicosMediadosPorTecnologias from "../../assets/certificados/certificado_prest_de_serv_de_psic_med_por_ti.pdf"
 import mdc from "../../assets/images/formacao_academica/mdc.webp"
 
 import { Virtual, Navigation, Pagination } from "swiper/modules";
