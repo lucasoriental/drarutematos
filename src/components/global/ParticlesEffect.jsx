@@ -9,7 +9,7 @@ const ParticlesEffect = () => {
       const particle = document.createElement('div');
       particle.classList.add('particle');
       particle.style.left = `${event.clientX - 4}px`;
-      particle.style.top = `${event.clientY - 4}px`;
+      particle.style.top = `${event.clientY - 4}px`; 
 
       const randomX = (Math.random() - 0.5) * 100;
       const randomY = (Math.random() - 0.5) * 100;
