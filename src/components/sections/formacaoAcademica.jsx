@@ -30,7 +30,7 @@ import tecPsicCorp from "../../assets/certificados/Certificado_Tecnicas de Psico
 import mindTheMindCert from "../../assets/certificados/Certificado Mind the mind (formaçao).pdf";
 import cineiccCert from "../../assets/certificados/Certificado_Congresso CINEICC.pdf";
 import relaxParaAdultosEIdosos from "../../assets/certificados/certificado_tecnicas_de_relaxamento_para_adultos_e_idosos.pdf";
-import servicosMediadosPorTecnologias from "../../assets/certificados/certificado_prestacao_de_servicos_de_psicologia_mediados_por_tecnologias_da_informacao_e_da_comunicaçao.pdf"
+import servicosMediadosPorTecnologias from "../../assets/certificados/certificado_prestacao_de_servicos_de_psicologia_mediados_por_ti.pdf"
 import mdc from "../../assets/images/formacao_academica/mdc.webp"
 
 import { Virtual, Navigation, Pagination } from "swiper/modules";
