@@ -8,10 +8,14 @@ import SobreMim from "./components/sections/aboutMe";
 import MinhasCompetencias from "./components/sections/competencias";
 import ContactosEMarcacoes from "./components/sections/contacts";
 import FAQ from "./components/sections/faq";
+import ParticlesEffect from "../src/components/global/ParticlesEffect";
+import ScrollToTopButton from "./components/global/ScrollToTopButton";
 
 function App() {
   return (
-    <>
+    <div id="main">
+      <ParticlesEffect />
+      <ScrollToTopButton />
       <Header />
       <MainPage />
       <MyServices />
@@ -21,7 +25,7 @@ function App() {
       <SobreMim />
       <ContactosEMarcacoes />
       <FAQ />
-    </>
+    </div>
   );
 }
 

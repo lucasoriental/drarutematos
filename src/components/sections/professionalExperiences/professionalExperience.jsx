@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import clinicadopaiao from "../../../assets/images/experiencias_profissionais/clinica_do_paiao.webp";
+import hiwellLogo from "../../../assets/images/experiencias_profissionais/hiwellLogo.webp"
 import condeixa from "../../../assets/images/experiencias_profissionais/centro_de_saude_condeixa_a_nova.webp";
 import casa from "../../../assets/images/experiencias_profissionais/CASA.webp";
 import psike from "../../../assets/images/experiencias_profissionais/psike.webp";
@@ -20,15 +21,24 @@ export default function ExperienciaProfissional() {
   let profExp = [
     {
       id: 0,
+      imagem: hiwellLogo,
+      titulo: "Psicóloga Clínica e da Saúde",
+      empresa: "Hiwell",
+      responsabilidades:
+        "A Hiwell é uma plataforma de saúde mental que facilita o acesso a consultas online com psicólogos qualificados, oferecendo descontos que tornam o acompanhamento mais acessível. Na Hiwell, realizo intervenções psicológicas online direcionadas para adolescentes e adultos, proporcionando um acompanhamento acessível, flexível e personalizado. <br><br>Através deste serviço, ajudo os pacientes a lidar com desafios emocionais e psicológicos, promovendo o bem-estar e o desenvolvimento pessoal. As principais áreas de atuação incluem: <br><br><ul><li><span>Avaliação Psicológica e Diagnóstico:</span> Utilizo entrevistas clínicas e instrumentos de avaliação para compreender as necessidades individuais de cada paciente e definir estratégias eficazes para o seu percurso terapêutico;</li><br><li><span>Intervenção Cognitivo-Comportamental (2ª e 3ª Gerações):</span> Aplico técnicas baseadas na Terapia Cognitivo-Comportamental (TCC), bem como abordagens de terceira geração, como Mindfulness, Compaixão e Terapia de Aceitação e Compromisso (ACT), ajustando-as a cada caso específico;</li><br><li><span>Promoção da Saúde Mental e Prevenção de Psicopatologias:</span> Trabalho com questões como ansiedade, depressão, dificuldades relacionais, gestão emocional e autoestima, ajudando os pacientes a desenvolver estratégias para lidar melhor com os seus desafios;</li><br><li><span>Planeamento de Intervenções Personalizadas:</span> Defino planos de intervenção adaptados a cada pessoa, acompanhando a sua evolução e ajustando as estratégias sempre que necessário.</li></ul><br>A Hiwell é a escolha ideal para quem procura um acompanhamento psicológico online de qualidade, com a comodidade de ser realizado à distância e com condições acessíveis.",
+      tempo: "01/2025 - presente",
+    },
+    {
+      id: 1,
       imagem: centroSocial,
       titulo: "Psicóloga Clínica e da Saúde",
       empresa: "Centro Social Paroquial do Paião",
       responsabilidades:
-        "No Centro Social Paroquial do Paião, desenvolvo um conjunto de atividades focadas no bem-estar e na qualidade de vida da população idosa. As minhas intervenções destinam-se a promover a saúde mental, a autonomia e a integração social dos utentes, através de diversas abordagens: <br><br><ul><li><span>Avaliações Psicossociais:</span> Realizo avaliações psicossociais para compreender o contexto e as necessidades de cada utente, o que permite um acompanhamento mais direcionado e sensível às suas particularidades; </li><br><li><span>Apoio Psicológico Individual:</span> Proporciono apoio psicológico individualizado, oferecendo um espaço seguro onde os utente podem expressar as suas emoções e trabalhar as dificuldades que enfrentam na sua vida diária; </li><br><li><span>Atividades em Grupo:</span> Organizo sessões em grupo que incentivam a socialização e a partilha de experiências, com o objetivo de fortalecer os laços sociais, estimular a mente e proporcionar momentos de diversão e interação; </li><br><li><span>Treino Cognitivo:</span> Desenvolvo atividades específicas de treino cognitivo, como exercícios de memória, atenção e raciocínio para preservar e fortalecer as capacidades cognitivas e estimular a plasticidade mental;</li><br><li><span>Promoção do Bem-Estar e Qualidade de Vida:</span> Implemento estratégias para promover o bem-estar físico e emocional contribuindo para uma maior qualidade de vida dos utentes e para a manutenção da sua saúde mental e emocional.</li></ul><br>Estas intervenções são desenhadas para responder às necessidades desta faixa etária, proporcionando-lhes um acompanhamento integral e personalizado.",
-      tempo: "10/24 - Presente",
+        "No Centro Social Paroquial do Paião, desenvolvi um conjunto de atividades focadas no bem-estar e na qualidade de vida da população idosa. As minhas intervenções destinaram-se a promover a saúde mental, a autonomia e a integração social dos utentes, através de diversas abordagens: <br><br><ul><li><span>Avaliações Psicossociais:</span> Realizei avaliações psicossociais para compreender o contexto e as necessidades de cada utente, o que permitiu um acompanhamento mais direcionado e sensível às suas particularidades;</li><br><li><span>Apoio Psicológico Individual:</span> Proporcionei apoio psicológico individualizado, oferecendo um espaço seguro onde os utentes podiam expressar as suas emoções e trabalhar as dificuldades que enfrentam na sua vida diária;</li><br><li><span>Atividades em Grupo:</span> Organizei sessões em grupo que incentivaram a socialização e a partilha de experiências, com o objetivo de fortalecer os laços sociais, estimular a mente e proporcionar momentos de diversão e interação;</li><br><li><span>Treino Cognitivo:</span> Desenvolvi atividades específicas de treino cognitivo, como exercícios de memória, atenção e raciocínio para preservar e fortalecer as capacidades cognitivas e estimular a plasticidade mental;</li><br><li><span>Promoção do Bem-Estar e Qualidade de Vida:</span> Implementei estratégias para promover o bem-estar físico e emocional, contribuindo para uma maior qualidade de vida dos utentes e para a manutenção da sua saúde mental e emocional.</li></ul><br>Estas intervenções foram desenhadas para responder às necessidades desta faixa etária, proporcionando-lhes um acompanhamento integral e personalizado.<br><br>O trabalho em part-time no Centro Social permitiu-me aprofundar a minha experiência na intervenção com a população idosa, desenvolvendo competências na adaptação de estratégias terapêuticas a esta faixa etária e reforçando a minha sensibilidade para as suas necessidades emocionais e cognitivas.",
+      tempo: "10/24 - 01/2025",
     },
     {
-      id: 1,
+      id: 2,
       imagem: clinicadopaiao,
       titulo: "Psicóloga Clínica e da Saúde",
       empresa: "Clínica do Paião",
@@ -37,7 +47,7 @@ export default function ExperienciaProfissional() {
       tempo: "10/23 - Presente",
     },
     {
-      id: 2,
+      id: 3,
       imagem: condeixa,
       titulo: "Estágio Curricular",
       empresa: "Centro de Saúde de Condeixa-a-Nova",
@@ -46,7 +56,7 @@ export default function ExperienciaProfissional() {
       tempo: "09/22 - 06/23",
     },
     {
-      id: 3,
+      id: 4,
       imagem: casa,
       titulo: "Psicóloga Clínica e da Saúde",
       empresa: "CASA (Centro de Apoio ao Sem Abrigo) - Figueira da Foz",
@@ -55,7 +65,7 @@ export default function ExperienciaProfissional() {
       tempo: "07/2021",
     },
     {
-      id: 4,
+      id: 5,
       imagem: mentalschool,
       titulo: "Estágio de Verão",
       empresa: "Mental School - Figueira da Foz",
@@ -64,7 +74,7 @@ export default function ExperienciaProfissional() {
       tempo: "07/20 - 08/20",
     },
     {
-      id: 5,
+      id: 6,
       imagem: psike,
       titulo: "Estágio de Verão",
       empresa: "Psike - Figueira da Foz",

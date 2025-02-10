@@ -29,6 +29,9 @@ import regCorp from "../../assets/certificados/Certificado_Corpo, Regulação Em
 import tecPsicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
 import mindTheMindCert from "../../assets/certificados/Certificado Mind the mind (formaçao).pdf";
 import cineiccCert from "../../assets/certificados/Certificado_Congresso CINEICC.pdf";
+import relaxParaAdultosEIdosos from "../../assets/certificados/certificado_tecnicas_de_relaxamento_para_adultos_e_idosos.pdf";
+import servicosMediadosPorTecnologias from "../../assets/certificados/certificado_prestacao_de_servicos_de_psicologia_mediados_por_tecnologias_da_informacao_e_da_comunicaçao.pdf"
+import mdc from "../../assets/images/formacao_academica/mdc.webp"
 
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -63,6 +66,24 @@ export default function FormacaoAcademia() {
   const arrCursosEFormacoes = [
     {
       id: 0,
+      imagem: mdc,
+      curso: "Técnicas de Relaxamento para Adultos e Idosos",
+      instituicao: "MDC Psicologia e Formação",
+      periodo: "11/2024 - 11/2024",
+      tempo: "4",
+      cert: relaxParaAdultosEIdosos,
+    },
+    {
+      id: 1,
+      imagem: opp,
+      curso: "Prestação de Serviços de Psicologia Mediados por Tecnologias da Informação e da Comunicação (TIC)",
+      instituicao: "Ordem dos Psicólogos Portugueses",
+      periodo: "09/2024 - 09/2024",
+      tempo: "10",
+      cert: servicosMediadosPorTecnologias,
+    },
+    {
+      id: 2,
       imagem: opp,
       curso: "O Profissional no Âmbito dos Cuidados Paliativos",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -71,7 +92,7 @@ export default function FormacaoAcademia() {
       cert: cuidadosPaliativos,
     },
     {
-      id: 1,
+      id: 3,
       imagem: opp,
       curso: "Literacia em Saúde, o Papel do Psicólogo",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -80,7 +101,7 @@ export default function FormacaoAcademia() {
       cert: papelPsico,
     },
     {
-      id: 2,
+      id: 4,
       imagem: opp,
       curso: "Intervenção Com Crianças E Jovens Em Risco",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -89,7 +110,7 @@ export default function FormacaoAcademia() {
       cert: intervCeJRisco,
     },
     {
-      id: 3,
+      id: 5,
       imagem: opp,
       curso: "Intervenção Psicológica Em Problemas Ligados Ao Álcool",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -98,7 +119,7 @@ export default function FormacaoAcademia() {
       cert: problAlcool,
     },
     {
-      id: 4,
+      id: 6,
       imagem: opp,
       curso: "Intervenção Psicológica em Situações de Violência Doméstica",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -107,7 +128,7 @@ export default function FormacaoAcademia() {
       cert: violDom,
     },
     {
-      id: 5,
+      id: 7,
       imagem: opp,
       curso:
         "Avaliação Psicológica de Condutores/as e Candidatos/as a Condutor/a",
@@ -117,7 +138,7 @@ export default function FormacaoAcademia() {
       cert: psicCond,
     },
     {
-      id: 6,
+      id: 8,
       imagem: opp,
       curso: "Educação Financeira e Psicologia",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -126,7 +147,7 @@ export default function FormacaoAcademia() {
       cert: educFinan,
     },
     {
-      id: 7,
+      id: 9,
       imagem: opp,
       curso: "Intervenção Psicológica Com Adultos Mais Velhos",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -135,7 +156,7 @@ export default function FormacaoAcademia() {
       cert: psicAdultVel,
     },
     {
-      id: 8,
+      id: 10,
       imagem: opp,
       curso: "Marketing Pessoal E Profissional",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -144,7 +165,7 @@ export default function FormacaoAcademia() {
       cert: mktPesEProf,
     },
     {
-      id: 9,
+      id: 11,
       imagem: opp,
       curso: "Intervenção Psicológica Com Pessoas LGBTQ",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -153,7 +174,7 @@ export default function FormacaoAcademia() {
       cert: psicLSGBT,
     },
     {
-      id: 10,
+      id: 12,
       imagem: opp,
       curso:
         "Intervenção Psicológica com Pessoas Refugiadas e Requerentes de Asilo",
@@ -163,7 +184,7 @@ export default function FormacaoAcademia() {
       cert: refEAsilo,
     },
     {
-      id: 11,
+      id: 13,
       imagem: opp,
       curso: "Participação nos Workshops EmCarreira",
       instituicao: "Ordem dos Psicólogos Portugueses",
@@ -172,7 +193,7 @@ export default function FormacaoAcademia() {
       cert: emCarreira,
     },
     {
-      id: 12,
+      id: 14,
       imagem: cineicc,
       curso: "IV International Congress CINEICC",
       instituicao:
@@ -182,7 +203,7 @@ export default function FormacaoAcademia() {
       cert: cineiccCert,
     },
     {
-      id: 13,
+      id: 15,
       imagem: univCoimbra,
       curso: "Participação no Ciclo de Workshops de Direitos Humanos",
       instituicao: "Amnistia internacional da Universidade de Coimbra",
@@ -191,7 +212,7 @@ export default function FormacaoAcademia() {
       cert: direitosHumanos,
     },
     {
-      id: 14,
+      id: 16,
       imagem: mindTheMind,
       curso:
         "“Mind the Mind - to Combat the Stigma of Mental Disorders (Formação)",
@@ -201,7 +222,7 @@ export default function FormacaoAcademia() {
       cert: mindTheMindCert,
     },
     {
-      id: 15,
+      id: 17,
       imagem: univCoimbra,
       curso:
         'Participação no Seminário Internacional de Psicologia do Bebé "Cucu, Bebé!"',
@@ -211,7 +232,7 @@ export default function FormacaoAcademia() {
       cert: cucubebe,
     },
     {
-      id: 16,
+      id: 18,
       imagem: instPPC,
       curso: "Simpósio Saúde Emocional",
       instituicao: "Instituto Português de Psicoterapia Corporal",
@@ -220,7 +241,7 @@ export default function FormacaoAcademia() {
       cert: psicCorp,
     },
     {
-      id: 17,
+      id: 19,
       imagem: instPPC,
       curso:
         "Participação no Workshop Corpo, Regulação Emocional e Relação Terapêutica",
@@ -230,7 +251,7 @@ export default function FormacaoAcademia() {
       cert: regCorp,
     },
     {
-      id: 18,
+      id: 20,
       imagem: instPPC,
       curso: "Participação no Workshop de Técnicas de Psicoterapia Corporal",
       instituicao: "Instituto Português de Psicoterapia Corporal",
@@ -239,7 +260,7 @@ export default function FormacaoAcademia() {
       cert: tecPsicCorp,
     },
     {
-      id: 19,
+      id: 21,
       imagem: univCoimbra,
       curso: "Participação no Treino da Mente Compassiva",
       instituicao:
