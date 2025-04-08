@@ -15,6 +15,53 @@
 
 //Seção inteira do cabeçalho (Header)
 
+#div_promo_message_apr {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--textColor);
+  width: 100vw;
+  padding: 0.625rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+
+  @media(max-width: 800px) {
+    flex-direction: column;
+    gap: 0.3125rem;
+  }
+}
+
+#text_promo_message_apr {
+  color: white;
+  font-weight: 500;
+  font-size: small;
+  max-width: 90%;
+  text-align: center;
+
+  /* @media(max-width: 800px) {
+    font-size: x-small;
+  } */
+}
+
+#link_promo_message_apr {
+  background-color: var(--lightColor);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.125rem 0.9375rem;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  font-size: small;
+
+  /* @media(max-width: 800px) {
+    font-size: small;
+  } */
+}
+
+#div_promo_message_apr_invisible {
+  transform: translateY(-200%);
+}
+
 //Header Global
 header {
   background-color: var(--backgroundHeader);
@@ -178,7 +225,7 @@ header {
 
 #container-main {
   font-family: "Montserrat";
-  padding-top: 250px;
+  padding-top: 300px;
   display: flex;
   width: 90%;
   max-width: 1660px;
@@ -187,7 +234,7 @@ header {
   margin: 0 auto;
 
   @media (max-width: 800px) {
-    padding-top: 94px;
+    padding-top: 200px;
     flex-direction: column;
   }
 }
@@ -378,6 +425,7 @@ header {
   @media (max-width: 775px) {
     font-size: 40px;
   }
+
   @media (max-width: 520px) {
     font-size: 30px;
   }
@@ -763,6 +811,7 @@ body.modal-open {
   @media (max-width: 800px) {
     font-size: 35px;
   }
+
   @media (max-width: 500px) {
     font-size: 25px;
   }
@@ -1018,11 +1067,11 @@ body.cada-experiencia-profissional-card-item {
   text-align: justify;
   margin-top: 5px;
 
-  ul{
+  ul {
     margin-left: 16px;
   }
 
-  span{
+  span {
     font-weight: 600;
   }
 }
@@ -1279,7 +1328,7 @@ body.cada-experiencia-profissional-card-item {
   }
 }
 
-.container-sobre-mim-texto span{
+.container-sobre-mim-texto span {
   color: var(--lightColor);
   font-weight: bold;
 }
@@ -1869,7 +1918,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 
-.sub-sec-2{
+.sub-sec-2 {
   margin-top: 5px;
   font-weight: 600;
 }
@@ -1940,6 +1989,7 @@ body.cada-experiencia-profissional-card-item {
 }
 
 @media (hover: none) {
+
   //Fixing mobile hover effect
   .scroll-to-top:hover {
     background-color: var(--hoverButtonColor);

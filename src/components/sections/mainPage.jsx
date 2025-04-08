@@ -11,7 +11,7 @@ export default function mainPage() {
   if (window.innerWidth > 800) {
     headerHeight = 220;
   } else {
-    headerHeight = 84;
+    headerHeight = 180;
   }
 
   return (

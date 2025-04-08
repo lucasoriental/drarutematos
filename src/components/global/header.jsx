@@ -4,13 +4,15 @@ import XIconSvg from "../../assets/icon_X";
 import { Link } from "react-scroll";
 import logo from "../../assets/images/logo1.png";
 
+import { X } from "lucide-react";
+
 export default function Header() {
   let headerHeight;
 
   if (window.innerWidth > 800) {
     headerHeight = 220;
   } else {
-    headerHeight = 84;
+    headerHeight = 180;
   }
 
   const [isActive, setIsActive] = useState(false);
@@ -30,6 +32,29 @@ export default function Header() {
 
   return (
     <header>
+      <div id="div_promo_message_apr">
+        <p id="text_promo_message_apr">
+          Terapia online a 30€ ATÉ ao final do ano - só para quem começar em
+          {"  "}
+          <span
+            style={{ letterSpacing: "0.0625rem", textDecoration: "underline" }}
+          >
+            abril
+          </span>
+          {""}.
+        </p>
+        <Link
+          id="link_promo_message_apr"
+          activeClass="active"
+          to="container-conteudo-contactos-e-marcacoes-light"
+          spy={true}
+          smooth={true}
+          offset={-headerHeight}
+          duration={1000}
+        >
+          Marcar Consulta
+        </Link>
+      </div>
       <div id="header-desktop">
         <Link
           activeClass="active"
