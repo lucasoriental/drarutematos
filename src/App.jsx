@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./components/styles/App.scss";
 import Header from "../src/components/global/header";
 import MainPage from "./components/sections/mainPage";
 import MyServices from "./components/sections/myServices/myServices";
