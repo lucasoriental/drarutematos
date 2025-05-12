@@ -1,15 +1,15 @@
-import "./components/styles/App.scss";
-import Header from "../src/components/global/header";
-import MainPage from "./components/sections/mainPage";
-import MyServices from "./components/sections/myServices/myServices";
-import ProfessionalExperience from "./components/sections/professionalExperiences/professionalExperience";
-import FormacaoAcademica from "./components/sections/formacaoAcademica";
-import SobreMim from "./components/sections/aboutMe";
-import MinhasCompetencias from "./components/sections/competencias";
-import ContactosEMarcacoes from "./components/sections/contacts";
-import FAQ from "./components/sections/faq";
-import ParticlesEffect from "../src/components/global/ParticlesEffect";
-import ScrollToTopButton from "./components/global/ScrollToTopButton";
+import Header from "../src/components/layout/header.jsx";
+import ParticlesEffect from "../src/components/ui/ParticlesEffect";
+import ScrollToTopButton from "./components/ui/ScrollToTopButton";
+import SobreMim from "./pages/aboutMe";
+import MinhasCompetencias from "./pages/competencias";
+import ContactosEMarcacoes from "./pages/contacts";
+import FAQ from "./pages/faq";
+import FormacaoAcademica from "./pages/formacaoAcademica";
+import MainPage from "./pages/mainPage";
+import MyServices from "./pages/myServices";
+import ProfessionalExperience from "./pages/professionalExperience";
+import "./styles/App.scss";
 
 function App() {
   return (

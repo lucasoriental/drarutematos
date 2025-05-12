@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import XIconSvg from "../../../assets/icon_X";
+import XIconSvg from "../../assets/icon_X";
 
 export default function MyServiceModal({ setOpenModal, service }) {
   useEffect(() => {

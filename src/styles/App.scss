@@ -9,7 +9,7 @@
   --linkColor: rgb(0, 89, 255);
 }
 
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -17,7 +17,8 @@
 //Seção inteira do cabeçalho (Header)
 
 #div_promo_message_apr {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: var(--textColor);
   width: 100vw;
   padding: 0.625rem 0rem;
@@ -26,7 +27,7 @@
   justify-content: center;
   gap: 1.25rem;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     gap: 0.3125rem;
   }
@@ -1918,7 +1919,6 @@ body.cada-experiencia-profissional-card-item {
   font-weight: 700;
 }
 
-
 .sub-sec-2 {
   margin-top: 5px;
   font-weight: 600;
@@ -1990,7 +1990,6 @@ body.cada-experiencia-profissional-card-item {
 }
 
 @media (hover: none) {
-
   //Fixing mobile hover effect
   .scroll-to-top:hover {
     background-color: var(--hoverButtonColor);

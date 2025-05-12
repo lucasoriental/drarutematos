@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
-import { Virtual, Navigation, Pagination } from "swiper/modules";
-import criatividade from "../../assets/images/minhas_competencias/transversais/criatividade.webp";
-import comunicacao from "../../assets/images/minhas_competencias/transversais/comunicacao.webp";
-import colaboracao from "../../assets/images/minhas_competencias/transversais/colaboracao.webp";
-import empatia from "../../assets/images/minhas_competencias/transversais/empatia.webp";
-import flexibilidade from "../../assets/images/minhas_competencias/transversais/flexibilidade.webp";
-import organizacao from "../../assets/images/minhas_competencias/transversais/organizacao.webp";
-import pensamentoCritico from "../../assets/images/minhas_competencias/transversais/pensamento_critico.webp";
-import resolucaoDeProblema from "../../assets/images/minhas_competencias/transversais/resolucao_de_problema.webp";
-import atualizacaoDeConhecimento from "../../assets/images/minhas_competencias/tecnicas/atualizacao_de_conhecimento.webp";
-import avaliacaoPsicologica from "../../assets/images/minhas_competencias/tecnicas/avaliacao_psicologica.webp";
-import documentacaoERelatorios from "../../assets/images/minhas_competencias/tecnicas/documentacao_e_relatorios.webp";
-import eticaEConfidencialidade from "../../assets/images/minhas_competencias/tecnicas/etica_e_confidencialidade.webp";
-import intervencaoCC from "../../assets/images/minhas_competencias/tecnicas/intervencao_cc.webp";
-import terceiraGeracao from "../../assets/images/minhas_competencias/tecnicas/terceira_geracao.webp";
+import { Navigation, Pagination, Virtual } from "swiper/modules";
+import atualizacaoDeConhecimento from "../assets/images/minhas_competencias/tecnicas/atualizacao_de_conhecimento.webp";
+import avaliacaoPsicologica from "../assets/images/minhas_competencias/tecnicas/avaliacao_psicologica.webp";
+import documentacaoERelatorios from "../assets/images/minhas_competencias/tecnicas/documentacao_e_relatorios.webp";
+import eticaEConfidencialidade from "../assets/images/minhas_competencias/tecnicas/etica_e_confidencialidade.webp";
+import intervencaoCC from "../assets/images/minhas_competencias/tecnicas/intervencao_cc.webp";
+import terceiraGeracao from "../assets/images/minhas_competencias/tecnicas/terceira_geracao.webp";
+import colaboracao from "../assets/images/minhas_competencias/transversais/colaboracao.webp";
+import comunicacao from "../assets/images/minhas_competencias/transversais/comunicacao.webp";
+import criatividade from "../assets/images/minhas_competencias/transversais/criatividade.webp";
+import empatia from "../assets/images/minhas_competencias/transversais/empatia.webp";
+import flexibilidade from "../assets/images/minhas_competencias/transversais/flexibilidade.webp";
+import organizacao from "../assets/images/minhas_competencias/transversais/organizacao.webp";
+import pensamentoCritico from "../assets/images/minhas_competencias/transversais/pensamento_critico.webp";
+import resolucaoDeProblema from "../assets/images/minhas_competencias/transversais/resolucao_de_problema.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -181,17 +181,27 @@ export default function MinhasCompetencias() {
                   for (let i = 0; i < 10; i++) {
                     if (i < item.nivel) {
                       levelElements.push(
-                        <canvas key={i} className="item-minhas-competencias-nivel-barra-On" />
+                        <canvas
+                          key={i}
+                          className="item-minhas-competencias-nivel-barra-On"
+                        />
                       );
                     } else {
                       levelElements.push(
-                        <canvas key={i} className="item-minhas-competencias-nivel-barra-Off" />
+                        <canvas
+                          key={i}
+                          className="item-minhas-competencias-nivel-barra-Off"
+                        />
                       );
                     }
                   }
                   return (
                     !item.tipo && (
-                      <SwiperSlide key={item.id} id={item.id} virtualIndex={index}>
+                      <SwiperSlide
+                        key={item.id}
+                        id={item.id}
+                        virtualIndex={index}
+                      >
                         <div className="item-minhas-competencias-div">
                           <img
                             src={item.imagem}
@@ -231,17 +241,27 @@ export default function MinhasCompetencias() {
                   for (let i = 0; i < 10; i++) {
                     if (i < item.nivel) {
                       levelElements.push(
-                        <canvas key={i} className="item-minhas-competencias-nivel-barra-On" />
+                        <canvas
+                          key={i}
+                          className="item-minhas-competencias-nivel-barra-On"
+                        />
                       );
                     } else {
                       levelElements.push(
-                        <canvas key={i} className="item-minhas-competencias-nivel-barra-Off" />
+                        <canvas
+                          key={i}
+                          className="item-minhas-competencias-nivel-barra-Off"
+                        />
                       );
                     }
                   }
                   return (
                     item.tipo && (
-                      <SwiperSlide key={item.id} id={item.id} virtualIndex={index}>
+                      <SwiperSlide
+                        key={item.id}
+                        id={item.id}
+                        virtualIndex={index}
+                      >
                         <div className="item-minhas-competencias-div">
                           <img
                             src={item.imagem}

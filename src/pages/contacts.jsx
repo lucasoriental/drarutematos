@@ -1,7 +1,7 @@
-import consultaOnline from "../../assets/images/contactos_e_marcacoes/consultaOnline.webp";
-import clinicaDoPaiao from "../../assets/images/contactos_e_marcacoes/logo_clinica_do_paiao.webp";
-import casaFigFoz from "../../assets/images/contactos_e_marcacoes/CASAFigFoz.webp";
-import TelephoneSVG from "../../assets/svgs/telephoneSVG";
+import casaFigFoz from "../assets/images/contactos_e_marcacoes/CASAFigFoz.webp";
+import consultaOnline from "../assets/images/contactos_e_marcacoes/consultaOnline.webp";
+import clinicaDoPaiao from "../assets/images/contactos_e_marcacoes/logo_clinica_do_paiao.webp";
+import TelephoneSVG from "../assets/svgs/telephoneSVG";
 
 export default function ContactosEMarcacoes() {
   const arrRedesSociais = [
