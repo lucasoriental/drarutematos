@@ -7,7 +7,7 @@ import logo from "../../assets/images/logo1.png";
 export default function Header() {
   let headerHeight;
 
-  if (window.innerWidth > 800) {
+  if (window.innerWidth > 1200) {
     headerHeight = 220;
   } else {
     headerHeight = 180;
@@ -92,6 +92,16 @@ export default function Header() {
             duration={1000}
           >
             Sobre mim
+          </Link>
+          <Link
+            activeClass="active"
+            to="acordos_e_parcerias_container"
+            spy={true}
+            smooth={true}
+            offset={-headerHeight}
+            duration={1000}
+          >
+            Acordos e Parcerias
           </Link>
           <Link
             activeClass="active"
@@ -199,6 +209,17 @@ export default function Header() {
               onClick={handleClickLink}
             >
               Sobre mim
+            </Link>
+            <Link
+              activeClass="active"
+              to="acordos_e_parcerias_container"
+              spy={true}
+              smooth={true}
+              offset={-headerHeight}
+              duration={1000}
+              onClick={handleClickLink}
+            >
+              Acordos e Parcerias
             </Link>
             <Link
               activeClass="active"

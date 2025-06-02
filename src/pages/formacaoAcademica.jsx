@@ -4,6 +4,7 @@ import instPPC from "../assets/images/formacao_academica/instituto_portugues_de_
 import mindTheMind from "../assets/images/formacao_academica/mindTheMindLogo.jpeg";
 import opp from "../assets/images/formacao_academica/ordem_dos_psicologos_portugueses.webp";
 import univCoimbra from "../assets/images/formacao_academica/universidade_de_coimbra.webp";
+import centroSocialCovaeGala from "../assets/images/formacao_academica/centroSocialdaCovaeGala.png";
 
 import AwardSVG from "../assets/svgs/award.jsx";
 import AwardsCupSVG from "../assets/svgs/awardsCup.jsx";
@@ -52,6 +53,10 @@ import tecPsicCorp from "../assets/certificados/Certificado_Tecnicas_de_Psicoter
 
 import relaxParaAdultosEIdosos from "../assets/certificados/certificado_tecnicas_de_relaxamento_para_adultos_e_idosos.pdf";
 
+import encontroPespectivasDoEnvelhecimento from "../assets/certificados/Certificado_Encontro_Perspectivas_do_Envelhecimento.pdf";
+
+import xiSeminarioPsicologiaEducacao from "../assets/certificados/Certificado_OPP_XISeminarioPsicologiaEducacao.pdf";
+
 import mdc from "../assets/images/formacao_academica/mdc.webp";
 
 import { Navigation, Pagination, Virtual } from "swiper/modules";
@@ -86,6 +91,15 @@ export default function FormacaoAcademia() {
 
   const arrCursosEFormacoes = [
     {
+      id: 23,
+      imagem: opp,
+      curso: "XI Seminário de Psicologia e Educação",
+      instituicao: "Ordem dos Psicólogos Portugueses",
+      periodo: "05/2025 - 05/2025",
+      tempo: "9",
+      cert: xiSeminarioPsicologiaEducacao,
+    },
+    {
       id: 0,
       imagem: mdc,
       curso: "Técnicas de Relaxamento para Adultos e Idosos",
@@ -93,6 +107,15 @@ export default function FormacaoAcademia() {
       periodo: "11/2024 - 11/2024",
       tempo: "4",
       cert: relaxParaAdultosEIdosos,
+    },
+    {
+      id: 22,
+      imagem: centroSocialCovaeGala,
+      curso: "III Encontro: Perspetivas do Envelhecimento",
+      instituicao: "Centro Social da Cova e Gala",
+      periodo: "09/2024 - 09/2024",
+      tempo: "8",
+      cert: encontroPespectivasDoEnvelhecimento,
     },
     {
       id: 1,
