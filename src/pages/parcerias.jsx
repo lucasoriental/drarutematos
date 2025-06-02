@@ -12,7 +12,10 @@ const images = [
 
 const Parcerias = () => {
   return (
-    <div id="acordos_e_parcerias_container" className="py-24 bg-slate-50 font-montserrat  mx-auto">
+    <div
+      id="acordos_e_parcerias_container"
+      className="py-24 bg-slate-50 font-montserrat  mx-auto"
+    >
       <div className="w-[90%] mx-auto">
         <div className="mb-24 mx-auto">
           <h2 className="text-[2.5rem] xl:text-[3.75rem] font-bold text-center text-[#403e36]">
@@ -26,13 +29,15 @@ const Parcerias = () => {
           </p>
         </div>
         <Swiper
+        className="max-w-7xl"
           spaceBetween={30}
           navigation={true}
           modules={[Navigation]}
           breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            0: { slidesPerView: 1 },
+            550: { slidesPerView: 2 },
+            740: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
           }}
         >
           {images.map((img) => (
