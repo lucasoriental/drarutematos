@@ -1,39 +1,65 @@
-import { useState, useEffect } from "react";
-import univCoimbra from "../../assets/images/formacao_academica/universidade_de_coimbra.webp";
-import opp from "../../assets/images/formacao_academica/ordem_dos_psicologos_portugueses.webp";
-import instPPC from "../../assets/images/formacao_academica/instituto_portugues_de_psicoterapia_corporal.webp";
-import mindTheMind from "../../assets/images/formacao_academica/mindTheMindLogo.jpeg";
-import cineicc from "../../assets/images/formacao_academica/CINEICC.jpeg";
+import { useEffect, useState } from "react";
+import cineicc from "../assets/images/formacao_academica/CINEICC.jpeg";
+import instPPC from "../assets/images/formacao_academica/instituto_portugues_de_psicoterapia_corporal.webp";
+import mindTheMind from "../assets/images/formacao_academica/mindTheMindLogo.jpeg";
+import opp from "../assets/images/formacao_academica/ordem_dos_psicologos_portugueses.webp";
+import univCoimbra from "../assets/images/formacao_academica/universidade_de_coimbra.webp";
+import centroSocialCovaeGala from "../assets/images/formacao_academica/centroSocialdaCovaeGala.png";
 
-import AwardSVG from "../../assets/svgs/award.jsx";
-import BookSVG from "../../assets/svgs/book.jsx";
-import CertificateSVG from "../../assets/svgs/certificate.jsx";
-import AwardsCupSVG from "../../assets/svgs/awardsCup.jsx";
+import AwardSVG from "../assets/svgs/award.jsx";
+import AwardsCupSVG from "../assets/svgs/awardsCup.jsx";
+import BookSVG from "../assets/svgs/book.jsx";
+import CertificateSVG from "../assets/svgs/certificate.jsx";
 
-import cuidadosPaliativos from "../../assets/certificados/Certificado O Profissional No Âmbito Dos Cuidados Paliativos.pdf";
-import papelPsico from "../../assets/certificados/Certificado Literacia Em Saúde, O Papel Do Psicólogo.pdf";
-import intervCeJRisco from "../../assets/certificados/Certificado Intervenção Com Crianças E Jovens Em Risco.pdf";
-import problAlcool from "../../assets/certificados/Certificado Intervenção Psicológica Em Problemas Ligados Ao Álcool.pdf";
-import violDom from "../../assets/certificados/Certificado Intervenção Psicológica em Situações de Violência Doméstica.pdf";
-import psicCond from "../../assets/certificados/Certificado Avaliação Psicológica de Condutores e Candidatos a Condutores.pdf";
-import educFinan from "../../assets/certificados/Certificado Educação Financeira E Psicologia.pdf";
-import psicAdultVel from "../../assets/certificados/Certificado Intervenção Psicológica Com Adultos Mais Velhos.pdf";
-import mktPesEProf from "../../assets/certificados/Certificado Marketing Pessoal E Profissional.pdf";
-import psicLSGBT from "../../assets/certificados/Certificado Intervenção Psicológica Com Pessoas LGBTQ.pdf";
-import refEAsilo from "../../assets/certificados/Certificado Intervenção Psicológica com Pessoas Refugiadas e Requerentes de Asilo.pdf";
-import emCarreira from "../../assets/certificados/Certificado Workshops EmCarreira.pdf";
-import direitosHumanos from "../../assets/certificados/Certificado Ciclo de Workshops de Direitos Humanos.pdf";
-import cucubebe from "../../assets/certificados/Certificado_Cucu Bebe.pdf";
-import psicCorp from "../../assets/certificados/Certificado_Simpósio Saúde Emocional.pdf";
-import regCorp from "../../assets/certificados/Certificado_Corpo, Regulação Emocional e Relação Terapêutica.pdf";
-import tecPsicCorp from "../../assets/certificados/Certificado_Tecnicas de Psicoterapia Corporal.pdf";
-import mindTheMindCert from "../../assets/certificados/Certificado Mind the mind (formaçao).pdf";
-import cineiccCert from "../../assets/certificados/Certificado_Congresso CINEICC.pdf";
-import relaxParaAdultosEIdosos from "../../assets/certificados/certificado_tecnicas_de_relaxamento_para_adultos_e_idosos.pdf";
-import servicosMediadosPorTecnologias from "../../assets/certificados/certificado_prest_de_serv_de_psic_med_por_ti.pdf"
-import mdc from "../../assets/images/formacao_academica/mdc.webp"
+import psicCond from "../assets/certificados/Certificado_Avaliacao_Psicologica_de_Condutores_e_Candidatos_a_Condutores.pdf";
 
-import { Virtual, Navigation, Pagination } from "swiper/modules";
+import direitosHumanos from "../assets/certificados/Certificado_Ciclo_de_Workshops_de_Direitos_Humanos.pdf";
+
+import educFinan from "../assets/certificados/Certificado_Educacao_Financeira_E_Psicologia.pdf";
+
+import intervCeJRisco from "../assets/certificados/Certificado_Intervencao_Com_Criancas_E_Jovens_Em_Risco.pdf";
+
+import psicAdultVel from "../assets/certificados/Certificado_Intervencao_Psicologica_Com_Adultos_Mais_Velhos.pdf";
+
+import psicLSGBT from "../assets/certificados/Certificado_Intervencao_Psicologica_Com_Pessoas_LGBTQ.pdf";
+
+import refEAsilo from "../assets/certificados/Certificado_intervencao_Psicologica_com_Pessoas_Refugiadas_e_Requerentes_de_Asilo.pdf";
+
+import problAlcool from "../assets/certificados/Certificado_Intervencao_Psicologica_Em_Problemas_Ligados_Ao_Alcool.pdf";
+
+import violDom from "../assets/certificados/Certificado_Intervencao_Psicologica_em_Situacoes_de_Violencia_Domestica.pdf";
+
+import papelPsico from "../assets/certificados/Certificado_Literacia_Em_Saude_O_Papel_Do_Psicologo.pdf";
+
+import mktPesEProf from "../assets/certificados/Certificado_Marketing_Pessoal_E_Profissional.pdf";
+
+import mindTheMindCert from "../assets/certificados/Certificado_Mind_the_mind_formaçao.pdf";
+
+import cuidadosPaliativos from "../assets/certificados/Certificado_O_Profissional_No_ambito_Dos_Cuidados_Paliativos.pdf";
+
+import emCarreira from "../assets/certificados/Certificado_Workshops_EmCarreira.pdf";
+
+import cineiccCert from "../assets/certificados/Certificado_Congresso_CINEICC.pdf";
+
+import regCorp from "../assets/certificados/Certificado_Corpo_Regulacao_Emocional_e_Relacao_Terapeutica.pdf";
+
+import cucubebe from "../assets/certificados/Certificado_Cucu_Bebe.pdf";
+
+import servicosMediadosPorTecnologias from "../assets/certificados/certificado_prest_de_serv_de_psic_med_por_ti.pdf";
+
+import psicCorp from "../assets/certificados/Certificado_Simposio_Saude_Emocional.pdf";
+
+import tecPsicCorp from "../assets/certificados/Certificado_Tecnicas_de_Psicoterapia_Corporal.pdf";
+
+import relaxParaAdultosEIdosos from "../assets/certificados/certificado_tecnicas_de_relaxamento_para_adultos_e_idosos.pdf";
+
+import encontroPespectivasDoEnvelhecimento from "../assets/certificados/Certificado_Encontro_Perspectivas_do_Envelhecimento.pdf";
+
+import xiSeminarioPsicologiaEducacao from "../assets/certificados/Certificado_OPP_XISeminarioPsicologiaEducacao.pdf";
+
+import mdc from "../assets/images/formacao_academica/mdc.webp";
+
+import { Navigation, Pagination, Virtual } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -65,6 +91,15 @@ export default function FormacaoAcademia() {
 
   const arrCursosEFormacoes = [
     {
+      id: 23,
+      imagem: opp,
+      curso: "XI Seminário de Psicologia e Educação",
+      instituicao: "Ordem dos Psicólogos Portugueses",
+      periodo: "05/2025 - 05/2025",
+      tempo: "9",
+      cert: xiSeminarioPsicologiaEducacao,
+    },
+    {
       id: 0,
       imagem: mdc,
       curso: "Técnicas de Relaxamento para Adultos e Idosos",
@@ -74,9 +109,19 @@ export default function FormacaoAcademia() {
       cert: relaxParaAdultosEIdosos,
     },
     {
+      id: 22,
+      imagem: centroSocialCovaeGala,
+      curso: "III Encontro: Perspetivas do Envelhecimento",
+      instituicao: "Centro Social da Cova e Gala",
+      periodo: "09/2024 - 09/2024",
+      tempo: "8",
+      cert: encontroPespectivasDoEnvelhecimento,
+    },
+    {
       id: 1,
       imagem: opp,
-      curso: "Prestação de Serviços de Psicologia Mediados por Tecnologias da Informação e da Comunicação (TIC)",
+      curso:
+        "Prestação de Serviços de Psicologia Mediados por Tecnologias da Informação e da Comunicação (TIC)",
       instituicao: "Ordem dos Psicólogos Portugueses",
       periodo: "09/2024 - 09/2024",
       tempo: "10",

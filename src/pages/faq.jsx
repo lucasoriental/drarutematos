@@ -223,7 +223,8 @@ export default function FAQ() {
       <div id="container-conteudo-FAQ-dark">
         <p className="container-titulo-da-seccao">Perguntas Mais Frequentes</p>
         <p className="container-sub-titulo-da-seccao">
-          Nesta secção encontrará informações sobre as perguntas mais frequentes acerca das consultas de psicologia.
+          Nesta secção encontrará informações sobre as perguntas mais frequentes
+          acerca das consultas de psicologia.
         </p>
         <div className="container-FAQ-grade">
           {arrFAQ.map((secao) => (
@@ -258,8 +259,8 @@ export default function FAQ() {
         </div>
         <div className="container-FAQ-mais-perguntas-div">
           <p className="container-FAQ-mais-perguntas-pergunta">
-            A sua dúvida não está entre as mais perguntadas? Envie-me a sua dúvida
-            para que possa ajudar:{" "}
+            A sua dúvida não está entre as mais perguntadas? Envie-me a sua
+            dúvida para que possa ajudar:{" "}
             <a
               style={{ textDecoration: "none", color: "#9d957b" }}
               href="mailto:ruteimatos@gmail.com"

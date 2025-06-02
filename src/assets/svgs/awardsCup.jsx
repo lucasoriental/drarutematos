@@ -6,7 +6,12 @@ export default function AwardsCupSVG({ size, color, strokeWidth }) {
       viewBox="0 0 1920 1920"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g fillRule="evenodd" clipRule="evenodd" stroke="none" strokeWidth={strokeWidth}>
+      <g
+        fillRule="evenodd"
+        clipRule="evenodd"
+        stroke="none"
+        strokeWidth={strokeWidth}
+      >
         <path d="M1034.59 564.21L959.198 320L885.413 562.527H640L838.898 714.104L761.906 960L960.801 808.422L1159.7 960L1081.1 715.79L1280 564.21H1034.59Z" />
         <path
           fillRule="evenodd"

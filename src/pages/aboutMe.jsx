@@ -1,4 +1,4 @@
-import fotoDePerfil from "../../assets/images/sobre_mim/sobre_mim.webp";
+import fotoDePerfil from "../assets/images/sobre_mim/sobre_mim.webp";
 
 export default function SobreMim() {
   return (
@@ -20,14 +20,14 @@ export default function SobreMim() {
             curricular no Centro de Saúde de Condeixa-a-Nova e o meu Ano
             Profissional Júnior na <span>Clínica do Paião</span>, onde
             atualmente continuo a exercer. Ao longo do meu percurso, colaborei
-            com o <span>Centro de Apoio ao Sem Abrigo</span> da Figueira da Foz, prestando
-            acompanhamento psicológico a pessoas de todas as idades, e com o {" "}
-            <span>Centro Social Paroquial do Paião</span>, intervindo no apoio à população
-            idosa. Atualmente, expandi a minha intervenção para o formato
-            online, integrando a rede de profissionais da plataforma <span>Hiwell</span>.{" "}
-            <br /> Desde cedo, a psicologia clínica tornou-se a minha{" "}
-            <span>verdadeira paixão</span>. Ajudar os outros a superar desafios
-            e promover o seu bem-estar é profundamente{" "}
+            com o <span>Centro de Apoio ao Sem Abrigo</span> da Figueira da Foz,
+            prestando acompanhamento psicológico a pessoas de todas as idades, e
+            com o <span>Centro Social Paroquial do Paião</span>, intervindo no
+            apoio à população idosa. Atualmente, expandi a minha intervenção
+            para o formato online, integrando a rede de profissionais da
+            plataforma <span>Hiwell</span>. <br /> Desde cedo, a psicologia
+            clínica tornou-se a minha <span>verdadeira paixão</span>. Ajudar os
+            outros a superar desafios e promover o seu bem-estar é profundamente{" "}
             <span>gratificante para mim</span>. No meu trabalho, aplico o modelo
             cognitivo-comportamental de 2ª e 3ª geração, conhecido pela sua{" "}
             <span>eficácia</span> em tratar uma ampla gama de questões,
